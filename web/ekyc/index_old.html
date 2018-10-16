@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+    <title>Probe Test</title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+  </head>
+  <body>
+	<div class="main">
+		<div class="form-group row">
+			<label class="col-sm-3 col-form-label">Company Name</label>
+			<div class="col-sm-7">
+			  <input type="text" class="form-control" placeholder="Enter company name" name="company_name" id="company_name">
+			  <span id='cmp_error' style='color:red;'></span>
+			</div>
+		</div>
+	  <div class="btn-id">
+	  <button type="button" class="btn btn-primary submit">Submit</button>
+	  </div>
+	  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+	  <table width="100%" class="dtls" >
+	  <tr>
+		<th>Legal Company Name</th>
+		<th>CIN Number</th>
+	  </tr>
+	  <tr>
+	  <td id="c_name"></td>
+	  <td id="cin_number"></td>
+	  </tr>
+	  </table>	  
+	</div>
+	
+	<script>
+	$(document).ready(function () {
+	$('.dtls').hide();
+	$('.lds-ring').hide();
+	});
+	$(".submit").on("click", function(){
+	$('.dtls').hide();
+	var compnay_value = $("#company_name").val().trim();
+	var company_data = 'companySearch';
+	//alert(compnay_value);
+	//return false;
+	if((document.getElementById('company_name').value).trim()== "") {
+        $('#cmp_error').html('Please enter company name');
+		return false;
+      }
+	  else{
+	        
+			$('#cmp_error').html('');
+			$('.lds-ring').show();
+			$('.btn-id').hide();
+	        $.post('actionData.php', {company_name: compnay_value, action:company_data,ajax: true}, function (data) {
+                    if (data.result == 'Success') {
+					var c_name = data.legal_name;
+					var c_number = data.cin_number;
+					$("#c_name").html(c_name);
+					$("#cin_number").html(c_number);
+					$('.dtls').show();
+					$('.lds-ring').hide();
+					$('.btn-id').show();
+                    }
+                }, 'json');
+	}			
+	});
+    </script>
+    </body>
+</html>

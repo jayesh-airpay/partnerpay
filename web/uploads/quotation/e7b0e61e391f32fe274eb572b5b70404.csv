@@ -1,0 +1,2 @@
+Hotel Id,Unique Id,Customer Name,Customer Email Id,Customer Mobile No,Amount,Tax,No Of Rooms,Booking Start Date (dd-mm-yyyy),Booking End Date (dd-mm-yyyy),Card No,Card Expiry Date (mmyy),Card Holder Name,Charge Rule Id
+426,Test11-2,Gaurav Mehta,gaurav@airpay.co.in,9821394146,1,0.18,2,02-02-2018,02-02-2018,4111111111111111,0318,Gaurav Mehta,161

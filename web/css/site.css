@@ -1,0 +1,132 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+h1 {color: #337ab7; font-weight: bold; font-size: 28px; margin-bottom: 25px;}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+div.required label:after {
+    content: " *";
+    color: red;
+}
+div.field-merchantmaster-logo label:after {
+    content: " *";
+    color: red;
+}
+div.field-usermaster-merchant_id label:after {
+    content: " *";
+    color: red;
+}
+div.field-usermaster-partner_id label:after {
+    content: " *";
+    color: red;
+}
+
+.field-loginform-username .control-label, .field-loginform-password .control-label {width: 10%; text-align:left;}
+.field-loginform-rememberme .col-lg-offset-1, .field-forgot-link .col-lg-offset-1, .login-submit .col-lg-offset-1 {margin-left: 10%; text-align:left;}
+
+.dash-blocks .tile{ max-height: 105px;}
+.glyphicon-eye-open {margin-right: 10px;}
+@media (min-width: 1350px) and (max-width: 1930px) {
+	.grid-view {max-width: 1900px; overflow: auto; width: 100%; }	
+}
+@media (min-width: 1025px) and (max-width: 1349px) {
+	.grid-view {max-width: 1300px; overflow: auto; width: 100%; }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.grid-view {max-width: 1024px; overflow: auto; width: 100%; }
+    .field-loginform-rememberme .col-lg-offset-1, .field-forgot-link .col-lg-offset-1, .login-submit .col-lg-offset-1 {margin-left: 0; text-align:left;}
+
+}
+@media only screen and (max-width: 767px) {
+	.grid-view {max-width: inherit; overflow: auto; width: 96%; margin: 0 auto;}
+    .field-loginform-username .control-label, .field-loginform-password .control-label {width: 100%; text-align:left;}
+    .field-loginform-rememberme .col-lg-offset-1, .field-forgot-link .col-lg-offset-1, .login-submit .col-lg-offset-1 {margin-left: 0; text-align:left;}
+}

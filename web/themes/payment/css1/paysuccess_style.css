@@ -1,0 +1,289 @@
+*{margin:0;padding:0;}
+
+#wrapper2{
+	width:100%;
+}
+.logo{
+	float: left;
+    margin-left: 175px;
+    margin-top: 20px;
+    width: 180px;
+}
+.name{
+float: left;
+    margin-left: 180px;
+    margin-top: 53px;
+    width: 400px;
+}
+.name p{
+font-size:30px;
+}
+.address{
+border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    padding-top: 12px;
+    width: 100%;
+}
+.address p{
+ margin: 0 auto;
+    width: 800px;
+font-size:16px;
+
+}
+.date{
+    height: 45px;
+    margin-left: 15px;
+    /*margin-top: 23px;*/
+    width: 240px;
+}
+.label1{
+    font-size: 18px;
+    display: inline-block;
+    padding-right: 15px;
+}
+.input1{
+    border-bottom: 1px solid #000000;
+    display: inline-block;
+}
+.received{
+    height: 45px;
+    margin-left: 15px;
+    margin-top:14px;
+    width: 1000px;
+}
+.label2{
+    font-size: 18px;
+    width: 255px;
+    display: inline-block;
+}
+.input2{
+border-bottom: 1px solid #000000;
+    display: inline-block;
+    width: 741px;
+}
+.sumofrupees{
+height: 45px;
+    margin-left: 15px;
+    margin-top:14px;
+    width: 1000px;
+}
+.label3{
+    font-size: 18px;
+    display: inline-block;
+    width: 180px;
+}
+.input3{
+border-bottom: 1px solid #000000;
+    display: inline-block;
+    width: 816px;
+}
+
+.invoice{
+height:45px;
+    margin-left: 15px;
+    margin-top:14px;
+    width: 1000px;
+}
+.label4{
+    font-size: 18px;
+    display: inline-block;
+    width: 235px;
+}
+
+.input4{
+border-bottom: 1px solid #000000;
+    display: inline-block;
+    width: 761px;
+}
+
+.ondated{
+height:45px;
+    margin-left: 15px;
+    margin-top:14px;
+    width:1000px;
+}
+.label5{
+    font-size: 18px;
+    display: inline-block;
+    width: 95px;
+}
+.input5{
+border-bottom: 1px solid #000000;
+    display: inline-block;
+    width: 901px;
+}
+
+.invoice{
+    height:45px;
+    margin-left: 15px;
+    margin-top:14px;
+    width: 1000px;
+}
+.referenceno{
+    height: 60px;
+    margin-left: 15px;
+    width: 1000px;
+    padding-top: 14px;
+}
+.label6{
+    font-size: 18px;
+    display: inline-block;
+    width: 295px;
+}
+.input6{
+    border-bottom: 1px solid #000000;
+    display: inline-block;
+    width: 701px;
+}
+
+.rupee{
+border: 1px solid #000000;
+    height: 45px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    margin-top: 14px;
+    width: 340px;
+}
+
+.thankyoutxt{
+    height: 60px;
+    width: 1000px;
+    padding-top: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+div[class^=input]{
+    font-size: 18px;
+}
+div[class^=label]{
+    font-weight: bold;
+}
+#content    {
+    width: 80% !important;
+}
+@media (max-width:768px) {
+    #content    {
+        width:100% !important;
+    }
+    .received,.rupee,.ondated,.invoice,.sumofrupees,.referenceno, .thankyoutxt{
+        width:100%;
+    }
+    .label1,.input2,.label2,.input2,.label3,.input3,.label4,.input4,.label5,.input5,.label6,.input6{
+        width:95%;
+        display:block;
+        margin:0;
+        float:none;
+    }
+    div[class^=label]{
+        font-weight: bold;
+    }
+}
+
+@media print    {
+    #logo, footer, .printbtn, #header, header, #home  {
+        display:none !important;
+    }
+    #content    {
+        width:100% !important;
+        margin-top: 10px !important;
+        margin-bottom: 30px !important;
+    }
+    .thankyoutxt    {
+        width : 100%;
+        text-align: right;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .label1, .label2, .label3, .label4, .label5, .label6    {
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+    #printlogo  {
+        display:block !important;
+    }
+
+    .date   {
+        width : 165px;
+    }
+    .received, .sumofrupees, .invoice, .ondated, .referenceno, .thankyoutxt {
+        width : 100%;
+    }
+    .label1{
+        font-size: 22px;
+        display: inline-block;
+        width: 35px;
+    }
+    .input1{
+        border-bottom: 1px solid #000000;
+    }
+
+    .label2{
+        font-size: 18px;
+        width: 40%;
+        display:inline-block;
+        float:left;
+    }
+    .input2{
+        border-bottom: 1px solid #000000;
+        display:inline-block;
+        width: 60%;
+        float:right;
+        margin: 0px;
+    }
+
+    .label3{
+        font-size: 18px;
+        display:inline-block;
+        float:left;
+        width: 30%;
+    }
+    .input3{
+        border-bottom: 1px solid #000000;
+        display:inline-block;
+        width: 70%;
+        float:right;
+    }
+
+
+    .label4{
+        font-size:18px;
+        display:inline-block;
+        float:left;
+        width: 38%;
+    }
+
+    .input4{
+        display:inline-block;
+        width: 62%;
+        float:right;
+    }
+
+
+    .label5{
+        font-size: 18px;
+        width:90px;
+        float:left;
+    }
+    .input5{
+        width: 84%;
+    }
+
+
+    .label6{
+        float:left;
+        width: 48%;
+    }
+    .input6{
+        float:left;
+        width: 52%;
+    }
+
+    div[class^=input]{
+        float: right;
+    }
+    #wrapper {
+        width: 600px !important;
+        margin: 0px auto;
+    }
+}

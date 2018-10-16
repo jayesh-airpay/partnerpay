@@ -1,0 +1,30 @@
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+ADD BILLER API DATA : "{\"mercid\":\"25806\",\"customerid\":187,\"privatekey\":\"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5\",\"callbackurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/bill_data_response\",\"returnurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/account_register_response\",\"action\":\"ADD_BILLER\",\"checksum\":\"f4b9ba4d0235cc1049ede38f20ce9b43\",\"bill_data\":[{\"fname\":\"MR AIRPAY PAYMENT SERVICES PVT LTD\",\"lname\":\"Lname\",\"email\":\"swapnil.pawar@airpay.co.in\",\"mobile_number\":\"8291893018\",\"account_id\":\"8291893018\",\"details\":\"{\\\"Relationship Number\\\":\\\"109949285\\\",\\\"Customer Name\\\":\\\"MR AIRPAY PAYMENT SERVICES PVT LTD\\\"}\",\"billerid\":\"2\",\"remark\":\"2\",\"requestid\":65}]}"
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+ADD BILLER API DATA : "{\"mercid\":\"25806\",\"customerid\":187,\"privatekey\":\"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5\",\"callbackurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/bill_data_response\",\"returnurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/account_register_response\",\"action\":\"ADD_BILLER\",\"checksum\":\"f4b9ba4d0235cc1049ede38f20ce9b43\",\"bill_data\":[{\"fname\":\"AIRPAY PAYMENT SERVICES PVT LTD\",\"lname\":\"Lname\",\"email\":\"swapnil.pawar@airpay.co.in\",\"mobile_number\":\"8291893044\",\"account_id\":\"8291893044\",\"details\":\"{\\\"Relationship Number\\\":\\\"109950185\\\",\\\"Customer Name\\\":\\\"AIRPAY PAYMENT SERVICES PVT LTD\\\"}\",\"billerid\":\"2\",\"remark\":\"2\",\"requestid\":66}]}"
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+GET BILLER ID API RESPONSE : null
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+ADD BILLER API DATA : "{\"mercid\":\"25806\",\"customerid\":187,\"privatekey\":\"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5\",\"callbackurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/bill_data_response\",\"returnurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/account_register_response\",\"action\":\"ADD_BILLER\",\"checksum\":\"f4b9ba4d0235cc1049ede38f20ce9b43\",\"bill_data\":[{\"fname\":\"AIRPAY\",\"lname\":\"Lname\",\"email\":\"swapnil.pawar@airpay.co.in\",\"mobile_number\":\"8291893043\",\"account_id\":\"8291893043\",\"details\":\"{\\\"Relationship Number\\\":\\\"109950186\\\",\\\"Customer Name\\\":\\\"AIRPAY\\\"}\",\"billerid\":\"2\",\"remark\":\"2\",\"requestid\":67}]}"
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}

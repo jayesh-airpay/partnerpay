@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Partnerpay-Spicejet</title>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico">
+        <link rel="stylesheet" href="resources/css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="resources/css/font-awesome.css" type="text/css" />
+        <link rel="stylesheet" href="resources/css/custom.css" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="header navbar-fixed-top">
+<nav id="mainNav" class="navbar navbar-default ">
+	<div class="container tophead">            
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Menu</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="index.html">
+			<span class="brandimg"><img alt="Partnerpay" src="resources/images/partnerpay-logo.png"/></span>
+			<span class="brandimg bank-brand"><img alt="banklogo" src="resources/images/brandlogo.png"/></span>
+		</a>
+		</div> <!-- /.navbar-header -->
+        <!-- <div class="mainmenu">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="dashboard.html">Home</a> </li>
+                    <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Merchant</a>
+						  <ul class="dropdown-menu">
+							<li><a href="admin-listing-merchant.html">List Merchant</a></li>
+							<li><a href="admin-create-merchant.html">Create Merchant</a></li>
+						  </ul>					
+					</li>
+                    <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Partner<span class="subtext">(Vendors)</span></span></a>
+						  <ul class="dropdown-menu">
+							<li><a href="admin-listing-partner.html">List Partner</a></li>
+							<li><a href="admin-create-partner.html">Create Partner</a></li>
+						  </ul>					
+					</li>
+                    <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users</a>
+						  <ul class="dropdown-menu">
+							<li><a href="admin-listing-user.html">List Users</a></li>
+							<li><a href="admin-create-user.html">Create Users</a></li>
+						  </ul>					
+					</li>			
+                    <li class="userbox dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>abc</span><i class="fa fa-user"></i></a>
+						  <ul class="dropdown-menu">
+							<li><a href="#">Logout</a></li>
+						  </ul>
+					</li>
+                </ul>
+            </div>
+		</div> --> <!-- /.mainmenu -->
+	</div> <!-- /.container -->
+</nav>
+</div>
+
+<div class="wrapper">
+	<div class="container">
+		<div class="page-header">
+			<h4>Travel agent registration form details</h4>
+			<!-- <div class="fieldstx">Fields with <span>*</span> are required.</div> -->
+		</div>
+		<form id="" name ="" action="" method="post" class="form" role="form">
+		<h5>Company Contact Details</h5>
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Company / Agency Name">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Business Registration No.">
+				</div>
+			</div>
+		</div>		
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<textarea class="form-control" rows="2" placeholder="Address"></textarea>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<label>Legal Status (please select)</label>
+				<div class="form-group">
+					<label class="checkbox-inline">
+					<input type="checkbox" id="status1" value="option1"> Sole Proprietorship
+					</label>
+					<label class="checkbox-inline">
+					  <input type="checkbox" id="status2" value="option2"> Limited Co.
+					</label>
+					<label class="checkbox-inline">
+					  <input type="checkbox" id="status3" value="option3"> Partnership Firm
+					</label>
+				</div>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="City">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="State">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Country">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Pin Code">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Nearest Airport">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="E-mail">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Phone">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Fax">
+				</div>
+			</div>
+		</div>
+		<h5>Affiliation Details / PAN (Permanent Account No.)</h5>
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="IATA / TAAI / TAFI / IATO No.">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group req">
+				<input type="text" class="form-control" placeholder="PAN No.">
+				</div>
+			</div>
+		</div>
+		<h5>Proprietor/Partner/CEO/MD</h5>
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Name">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group req">
+				<input type="text" class="form-control" placeholder="Position">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Phone/Mobile">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group req">
+				<input type="text" class="form-control" placeholder="E-mail">
+				</div>
+			</div>
+		</div>
+		<h5>Authorised Booking Staff contact details</h5>
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Name">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group req">
+				<input type="text" class="form-control" placeholder="Position">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">
+				<input type="text" class="form-control" placeholder="Phone/Mobile">
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group req">
+				<input type="text" class="form-control" placeholder="E-mail">
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="col-sm-6 col-md-5 col-lg-4">
+				<div class="form-group">					
+				<input type="button" class="btn btn-primary lg-btn" id="submitform" value="Submit">
+				</div>
+			</div>
+		</div>
+		</form>
+	</div>
+</div>
+
+
+
+<div class="footer">	
+	<div class="container copyright"><p>Copyright © 2018 by airpay.</p></div>
+</div>
+
+<!-- jQuery -->
+<script type="text/javascript" src="resources/js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="resources/js/bootstrap.file-input.js"></script>
+<script type="text/javascript" src="resources/js/custom.js"></script>
+
+<script type="text/javascript">
+	$("#submitform").click(function () {
+		window.setTimeout(function() {
+			window.location.href = 'user-listing.html';
+		}, 500);
+	});	
+</script>
+
+</body>
+</html>

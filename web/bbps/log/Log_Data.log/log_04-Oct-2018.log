@@ -1,0 +1,51 @@
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+REGISTER DATA RESPONSE : {"REGISTERID":6,"BILLERACCOUNTID":"ARPBLSE0000001","ACCOUNTID":"6993010422","PROFILEID":"25806","CUSTOMERID":"1","REQUESTNUMBER":"8","STATUS":"200","CHECKSUM":"44a9264f45f2fbf2c6410a8910b4e264","PRIVATEKEY":"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5"}
+REGISTER DATA RESPONSE : {"REGISTERID":7,"BILLERACCOUNTID":"ARPBLSE0000002","ACCOUNTID":"9870626211","PROFILEID":"25806","CUSTOMERID":"1","REQUESTNUMBER":"9","STATUS":"200","CHECKSUM":"ca40886a01c32d50bee276630313e0b5","PRIVATEKEY":"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+REGISTER DATA RESPONSE : {"REGISTERID":6,"BILLERACCOUNTID":"ARPBLSE0000001","ACCOUNTID":"6993010422","PROFILEID":"25806","CUSTOMERID":"1","REQUESTNUMBER":"8","STATUS":"200","CHECKSUM":"44a9264f45f2fbf2c6410a8910b4e264","PRIVATEKEY":"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5"}
+REGISTER DATA RESPONSE FROM P : UPLOADED SUCCESSFULLY 
+REGISTER DATA RESPONSE : {"REGISTERID":7,"BILLERACCOUNTID":"ARPBLSE0000002","ACCOUNTID":"9870626211","PROFILEID":"25806","CUSTOMERID":"1","REQUESTNUMBER":"9","STATUS":"200","CHECKSUM":"ca40886a01c32d50bee276630313e0b5","PRIVATEKEY":"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5"}
+REGISTER DATA RESPONSE FROM P : UPLOADED SUCCESSFULLY 
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+ADD BILLER API RESPONSE : {"400":"Merchant not valid"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+REGISTER DATA RESPONSE : {"USER_ID":"25806","CUSTOMER_ID":"187","AUTHENTICATOR":"9833766799","REFERENCE_NUMBER":"10","STATUS":"400","ERRMSG":"Data mismatch"}
+REGISTER DATA RESPONSE FROM P : Error in Authentication 
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+REGISTER DATA RESPONSE : {"REGISTERID":8,"BILLERACCOUNTID":"ARPBLSE0000021","ACCOUNTID":"9833766799","PROFILEID":"25806","CUSTOMERID":"187","REQUESTNUMBER":"10","STATUS":"200","CHECKSUM":"833cf4ab7fea70748cbb1f007b9ef802","PRIVATEKEY":"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5"}
+REGISTER DATA RESPONSE FROM P : Error in Authentication 
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Account already register.[\"9833766799\",\"7506240131\",\"9820021497\",\"7045925405\",\"7045925407\",\"8291104368\",\"8291104398\",\"8291104396\",\"8291104382\",\"8291104392\",\"8291104376\",\"8291104369\",\"8291104397\",\"8291104390\",\"8291991598\",\"8291991583\",\"8291991589\",\"8291991575\",\"8291991590\",\"8291991554\",\"8291991557\",\"8291991556\",\"8291843824\",\"8291843813\",\"8291843817\",\"8291843821\",\"8291843849\",\"8291843846\",\"8291843836\",\"8291843840\",\"8291843837\",\"8291843845\",\"8291843844\",\"8291843839\",\"8291843834\",\"8291843832\",\"8291861783\",\"8291861771\",\"9769000895\",\"8291861797\",\"8291861776\",\"8291861773\",\"8291861759\",\"8291861744\",\"9769000417\",\"8291861787\",\"8291861770\",\"8291861768\",\"8291861747\"]"}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Account already register.[\"8291861746\",\"9833390501\",\"8291893042\"]"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+ADD BILLER API DATA : "{\"mercid\":\"25806\",\"customerid\":187,\"privatekey\":\"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5\",\"callbackurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/bill_data_response\",\"returnurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/account_register_response\",\"action\":\"ADD_BILLER\",\"checksum\":\"f4b9ba4d0235cc1049ede38f20ce9b43\",\"bill_data\":[{\"fname\":\"MR. AIRPAY PAYMENT SERVICES PVT LTD\",\"lname\":\"Lname\",\"email\":\"swapnil.pawar@airpay.co.in\",\"mobile_number\":\"8291893041\",\"account_id\":\"8291893041\",\"details\":\"{\\\"Relationship Number\\\":\\\"109949279\\\",\\\"Customer Name\\\":\\\"MR. AIRPAY PAYMENT SERVICES PVT LTD\\\"}\",\"billerid\":\"2\",\"remark\":\"2\",\"requestid\":62}]}"
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+ADD BILLER API DATA : "{\"mercid\":\"25806\",\"customerid\":187,\"privatekey\":\"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5\",\"callbackurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/bill_data_response\",\"returnurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/account_register_response\",\"action\":\"ADD_BILLER\",\"checksum\":\"f4b9ba4d0235cc1049ede38f20ce9b43\",\"bill_data\":[{\"fname\":\"MR. AIRPAY PAYMENT SERVICES PVT LTD\",\"lname\":\"Lname\",\"email\":\"swapnil.pawar@airpay.co.in\",\"mobile_number\":\"8291893038\",\"account_id\":\"8291893038\",\"details\":\"{\\\"Relationship Number\\\":\\\"109949280\\\",\\\"Customer Name\\\":\\\"MR. AIRPAY PAYMENT SERVICES PVT LTD\\\"}\",\"billerid\":\"2\",\"remark\":\"2\",\"requestid\":63}]}"
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+ADD BILLER API DATA : "{\"mercid\":\"25806\",\"customerid\":187,\"privatekey\":\"ec2db8da735d4600f5f65a9d129388a519b57a0a0f044c138b042363defb3dc5\",\"callbackurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/bill_data_response\",\"returnurl\":\"http:\\\/\\\/partnerpay.co.in\\\/bbps\\\/billapi\\\/account_register_response\",\"action\":\"ADD_BILLER\",\"checksum\":\"f4b9ba4d0235cc1049ede38f20ce9b43\",\"bill_data\":[{\"fname\":\"MR. AIRPAY PAYMENT SERVICES PVT LTD\",\"lname\":\"Lname\",\"email\":\"swapnil.pawar@airpay.co.in\",\"mobile_number\":\"8291893033\",\"account_id\":\"8291893033\",\"details\":\"{\\\"Relationship Number\\\":\\\"109949282\\\",\\\"Customer Name\\\":\\\"MR. AIRPAY PAYMENT SERVICES PVT LTD\\\"}\",\"billerid\":\"2\",\"remark\":\"2\",\"requestid\":64}]}"
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}

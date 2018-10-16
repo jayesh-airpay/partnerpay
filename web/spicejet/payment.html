@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Airpay</title>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+     <!-- <link rel="stylesheet" href="./v2/styles/slick.css" type="text/css" />
+        <link rel="stylesheet" href="./v2/styles/main.css" type="text/css" />  -->
+   
+     <link rel="stylesheet" href="https://payments.airpay.co.in/pay/v2/prod-build/payment.min.css" type="text/css">
+    <script type="text/javascript" src="https://payments.airpay.co.in/pay/v2/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="https://payments.airpay.co.in/pay/v2/vendor/handlebars.min.js"></script> 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script> -->
+    <script type="text/javascript" src="https://payments.airpay.co.in/pay/v2/vendor/slick.min.js"></script>
+
+    <!--- Airpay validtion JS Files -->
+
+    <!--- Airpay JS Files -->
+    
+      	<!-- <script type="text/javascript" src='v2/js/cash.js'></script>
+        <script type="text/javascript" src='v2/js/credit.js'></script>
+        <script type="text/javascript" src='v2/js/debit.js'></script>    
+        <script type="text/javascript" src='v2/js/netbanking.js'></script>
+        <script type="text/javascript" src='v2/js/amex.js'></script>
+        <script type="text/javascript" src='v2/js/upi.js'></script>
+        <script type="text/javascript" src='v2/js/wallet.js'></script>
+        <script type="text/javascript" src='v2/js/paylater.js'></script>
+        <script type="text/javascript" src='v2/js/rtgs.js'></script>
+        <script type="text/javascript" src='v2/js/bharat_qr.js'></script>
+        <script type="text/javascript" src='v2/js/savedcards.js'></script>
+        <script type="text/javascript" src='v2/js/air_loan.js'></script>
+        <script type="text/javascript" src='v2/js/virtual_acc.js'></script>
+        <script type="text/javascript" src='v2/js/express_payment.js'></script>
+        <script type="text/javascript" src='v2/js/amazon.js'></script>
+        <script type="text/javascript" src='v2/js/emi.js'></script>
+        <script type="text/javascript" src='v2/js/offertab.js'></script>
+        <script type="text/javascript" src='v2/js/merchant_wallet.js'></script>
+        <script type="text/javascript" src='v2/js/common.js'></script>
+        <script type="text/javascript" src='v2/js/middleware.js'></script>
+        <script type="text/javascript" src='v2/js/main.js'></script>-->
+    
+        <script type="text/javascript" src="https://payments.airpay.co.in/pay/v2/prod-build/payment.min.js"></script> 
+
+</head>
+
+<body class="airpay-default kit-">
+    <div class="loader" style="display: none;"></div>
+    <div id="wrap">
+        <div class="head">
+            <div class="topheadbar">
+                <div class="closetab" style="display: none;">
+                    <svg id="closetabbtn">
+                        <polygon points="0 9,10 0,16 0,6 9,17 20,11 20"></polygon>
+                    </svg>
+                </div>
+                <div class="langbar">
+                    <div class="langbarbox">
+                        <select class="form-control language-selector"> 
+                            <option value="en">English</option>
+                            <option value="as">Assamese</option> 
+                            <option value="bn">Bengali</option> 
+                            <option value="gu">Gujarati</option>
+                            <option value="hi">Hindi</option>
+                            <option value="mr">Marathi</option>
+                            <option value="or">Orissa</option>
+                            <option value="ta">Tamil</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <div class="mer-logo-txt"><img src="resources/images/brandlogo.png" class="pay-fulllogo"></div>
+            </div>
+        </div>
+        <div class="main-container"><div class="mobhead">
+    <div class="message-block">
+        <div class="generic-error" style="display: none;"></div>
+        <div class="generic-success" style="display: none;">OTP sent to your registered email id and to Mobile Number.</div>
+    </div>
+        <div class="offer-discount-block"></div>
+</div>
+
+<div class="pay-container">
+    
+   <div class="container block-container">
+
+        <div class="amount-block">
+            <div class="amtwrap">
+                <h2>Summary</h2>
+                <p class="odrID">Order Id: <strong class="order-id-num">334344</strong></p>
+                <div class="divide clear"></div>
+                <div class="subtotal-text paddingBT20">
+                     
+                    <div class="align-left">Total</div>
+                    <div class="align-right"><i class="rupee-icon">₹</i> <span id="total_amount">1.00</span></div>
+                   
+                </div>
+               
+            </div>
+            
+            <div class="default-amount-block main-amount-block">
+                <!-- discount -->
+                 <div class="applied-block">
+                    
+                    <div class="discount-text">
+                        <div class="align-left">Discount</div>
+                       <div class="align-right">
+                           
+                        <i class="rupee-icon">₹</i>
+                        <span id="discount_amount">0.00</span>
+                        
+                        </div>
+                        <a id="cancel_offer">Remove Offer</a> 
+                           
+                    </div>
+                </div>
+                 <!--discount -->
+                
+                 <div class="surcharge-text paddingBT20">
+                   <div class="align-left">
+                       Conv. Fee
+                    </div>
+                    <div class="align-right">
+                        <i class="rupee-icon">₹</i>
+                        <span class="surcharge_amount">0.00</span>
+                    </div>
+                </div>
+                <div class="divide"></div>
+                <div class="amt-summary currency-block foreign-currency-block">
+                    <p class="foreign-currency-holder">
+                        Original: <span class="foreign-currency-symbol"></span>&nbsp;<span class="foreign-currency-amt">1.00</span>
+                    </p>
+                </div>
+                <div class="amt-summary">
+                        <div class="align-left">Amount </div>
+                        <div class="align-right"><i class="rupee-icon">₹</i> <span class="amount-value-block">1.00</span></div>
+                </div>
+                <p class="conRate">Rate of Conversion: <i class="rupee-icon">₹</i>&nbsp;<span class="coversion-rate--value"></span></p>
+            </div>
+            <div class="offer-mobtogglebtn"><i class="icon icon-offer"></i> Avail Offers &amp; Discounts</div>
+        </div>
+
+        <div class="mobi-height">
+        <div class="save-card-container" style="display: block;"></div>
+
+        <div class="tab-menu">
+            <ul class="menu-list">
+                   
+                    <li class="menuli tab-menu-options active" data-tab="tabs-">
+                       <a href="#" data-sur-tab="expressPayments" data-tab-id="expressPayments" class="menu-link"> <!--<img src="img/-icon.png" alt="" class="imgmob"/>--> 
+                        <div class="imgmob"><span class="imgicon icon icon-exp-pay"></span></div>
+                        Express Payments</a>
+                    </li>
+                   
+            </ul>
+        </div>
+        </div>
+        <div class="tabWrap">
+            <div class="only-mobile">
+            <!-- mobile view st -->
+            <div class="logo">
+                <div class="mer-logo-txt">Demo Merchant new</div>
+            </div>
+           <div class="amount-block-mob">
+               <p class="order-id">Order Id: <strong class="order-id-num">334344</strong></p>
+                <p class="amount-dtls">Amount : <span class="rupee-mob"><i class="rupee-icon">₹</i> <span class="amount-value-block">1.00</span></span></p>
+           </div>
+           <!-- mobile view end -->
+           
+                <div class="offer-discount-block"><a href="#" class="offer-togglebtn">Avail Offers &amp; Discounts 
+    <span class="toggle-tx arrow-down">
+<span class="default">Click here to open</span>
+<span class="open">Click here to close</span>
+</span>
+</a>
+<div class="container offer-container">
+    <div class="offer-menu">
+        <ul class="offermenu-list">
+        <li class="offer-tab-opt menuli menu-credit_card">
+            <a href="#" data-tab-id="credit_card" class="menu-link">Credit Card</a>
+        </li>
+        </ul>
+    </div>
+    <div class="offerWrap">
+        <div class="offertab-container">
+            <div class="offer-blockmain credit_card-blockmain" data-tab-key="credit_card">
+                    <h3 class="offer-select-txt">Please select an Offer below</h3>
+        <ul class="offerlist">
+                            <li>
+                                <label for="446-offer">
+                                    <div>maestro</div>
+                                    <input type="radio" class="radio-box" name="campaign-radio" value="446" data-campaign-id="446" data-discount="2.00" data-maximum-amt="1.00" data-min-amt="1.00" data-disc-type="p" data-card-issuer="mastercard" id="446-offer">         
+                                    <span class="offertx">debit</span>
+                                </label>
+                            </li>
+                </ul>
+                <div class="inputcheck-block">
+                <div class="inputcheck-wrap">
+                    <div class="formDom form-group">
+<input type="text" class="form-control offers-card-code-input">
+<label>Please enter the card number</label>
+                                    <span class="help"></span>
+</div>
+                    <div class="form-group">
+<input class="offers-tab-submit" type="submit" value="Apply">
+</div>
+</div>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+            <div class="message-block msg-mob">
+                <div class="generic-error" style="display: none;">Password does not match.</div>
+                <div class="generic-success" style="display: none;">Password verification link sent to your registered email id.</div>
+            </div>
+            </div>
+            <div class="tab-container">
+                <div class="tab-loader" style="display: none;"></div>
+                 <div class="channelTabError"></div>
+                <div class="cvvpgwrap save-card-mob-submit">
+                    <div class="mobsvdcard dsksvdcard">
+                        <p class="txtfrcvv">Enter CVV number for this card</p>
+                        <div class="slide-content slick-active">
+                            <div class="saved-card-wrap">
+                                <div class="icon-div">
+                                    <div class="cdheight"></div>
+                                    <span class="input-group-addon icon iCard"></span>
+                                </div>
+                                <h3 class="cardNumber undefined-icon" data-rule-required="false"></h3>
+                                <div class="cdno">
+                                    <p class="cardname"></p>
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <h4 class="exp_date" data-rule-required="false"><span class="Exp-mm"></span> / <span class="Exp-yy"></span></h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="formDom form-group">
+                        <input type="password" class="form-control cvv" placeholder="CVV" maxlength="3" data-rule-required="false">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Make Payment" class="btn">
+                    </div>
+                </div>
+            <div class="blockMain blockCards credit-tab" data-tab-type="credit" style="display: none;">
+    <input type="hidden" name="cardinfo.expmon" id="exp-month">
+<input type="hidden" name="cardinfo.expyr" id="exp-year">
+    <div class="defaultBlock card-ccdc">
+
+        <div class="cardWrap">
+            <input type="hidden" name="cardinfo.cardtype" id="cardType" value="CREDITCARD">
+            <div class="formDom form-group" data-err-cod="C1">
+                <div class="input-group">
+                    <input type="tel" autocomplete="off" maxlength="23" class="form-control cardNumber undefined-icon" data-rule-required="false">
+                    <label>Card Number</label>
+                    <span class="input-group-addon icon iCard"></span>
+                </div>
+                <span class="help">Please enter a valid card number</span>
+            </div>
+
+            <div class="formDom form-group has-content" data-err-cod="C2">
+                <div class="input-group">
+                    <input type="text" autocomplete="off" class="form-control cardname" data-rule-required="true" maxlength="50">
+                    <label>Card Holder Name</label>
+                    <span class="input-group-addon icon iNameCard"></span>
+                </div>
+                <span class="help">Please enter name on your card</span>
+            </div>
+
+        <div class="row if-maestro">                              
+                <div class="col-xs-8">
+                    <div class="formDom form-group" data-err-cod="C3">
+                        <div class="input-group">
+                            <input type="tel" autocomplete="off" maxlength="5" class="form-control exp_date" placeholder="MM/YY" data-rule-required="false">
+                            <label>Card Exp Date</label>
+                            <span class="input-group-addon icon iExp"></span>
+                        </div>
+                        <span class="help">Please enter a valid expiry date</span>
+                    </div>
+                    
+                </div>                             
+                <div class="col-xs-4">
+                    <div class="formDom form-group" data-err-cod="C4">
+                        <div class="input-group">
+                            <input type="password" autocomplete="off" class="form-control cvv" data-rule-required="false">
+                            <label>CVV</label>
+                            <span class="input-group-addon icon iCVV"></span> 
+                        </div>
+                        <span class="help cvv-help">Its a 3 digit code printed on the back of your card</span>
+                        <span class="help amexcvv-help" style="display: none;">Its a 4 digit code printed on the back of your card</span>                        
+                    </div>
+                </div>
+            </div> 
+        </div>  
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" class="save-Card-Check" value="">
+                    Save card now to enable express payments
+                </label>
+            </div>  
+        
+        <div class="form-group">
+                <input type="submit" value="Make Payment" class="btn submit-credit-dtls" data-sub-form-id="credit-form">
+        </div> 
+        <div class="rupay-text" style="display: none;">
+            It is mandatory for you to register for the e-commerce / online transaction service with your bank to pay using your RuPay card. Unregistered cards will not be processed. Please contact your bank to register your Rupay Card if not already done.
+        </div>
+        <div class="boi-rupay-text" style="display: none;">
+            
+        </div>
+    </div>
+</div>         <div class="blockMain blockExpPayment express-payment-tab" data-tab-type="expressPayments" data-scloginkey="03bd3ebf3efcf8d5f4d19ba9fb83c00f" style="display: block;">
+<!-- sign in -->
+        <div class="exp-pay-signin" style="display: none;">
+            <div class="signin-section" data-sign="exp-signIn">
+
+            <div class="signBlock">
+            <h3 class="subtitle">Sign In</h3>
+            <div class="formDom form-group has-content" data-err-cod="E1">
+                <div class="input-group">
+                    <input type="text" autocomplete="off" class="form-control mob-email" data-rule-required="true">
+                    <label>Mobile No. / E-mail Id</label>
+                    <span class="input-group-addon icon iUser"></span>
+                </div>
+                <span class="help">Please enter your valid user id</span>
+            </div>
+        
+            <div class="tab" role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="tab-link otpSection" data-tab="tab-1">OTP</li>                    
+                        <li class="tab-link passwordSection current" data-tab="tab-2">Password</li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content tabs">
+                        <div role="tabpanel" class="tab-pane fade in" id="tab-1">
+                            <div class="formDom form-group" data-err-cod="E5">
+                                <div class="input-group">
+                                    <input type="tel" autocomplete="off" class="form-control valid-otp" maxlength="6">
+                                    <label>OTP code</label>
+                                    <span class="input-group-addon icon iotp"></span>
+                                </div>
+                                <span class="help">Please enter your OTP code</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 right">
+                                    <span id="showCount" class="float-right"></span>
+                                    <a href="javascript:void(0);" class="float-right counter-otp cr-resend-otp" id="resend_pgcc" style="display: inline;">Resend OTP</a>
+                                </div>
+                            </div>
+                            <!-- otp submit-->
+                            <div class="form-group">
+                                <input type="submit" value="Make Payment" data-sub-form-id="expresspayment-form" class="btn verify-otp" id="exp_pay">            
+                            </div>
+                            <!-- otp submit-->
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane fade current" id="tab-2"> 
+                            <div class="formDom form-group has-content" data-err-cod="E2">
+                                <div class="input-group">
+                                    <input type="password" autocomplete="off" class="form-control newPassword signin-password" data-rule-required="true">
+                                    <label>Password</label>
+                                    <span class="input-group-addon icon iPass"></span>
+                                </div>
+                                <span class="help">Please enter your password</span>
+                            </div>
+                            <div class="row">
+                            <div class="col-xs-12 right">
+                                <a href="#" class="float-right frgt-pswd">Forgot Password</a>
+                            </div>
+                            </div>
+                            <!-- final submit -->
+                            <div class="form-group">
+                                <input type="submit" value="Make Payment" data-sub-form-id="expresspayment-form" class="btn exp-pay-submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+              
+            </div>
+        </div>
+        <div class="express-save-card-container save-card-container" style="display: block;"><div class="mobsvdcard dsksvdcard svdslider">
+    <p>Please select card to enter CVV</p>
+    <div class="slide-content">
+        <div class="saved-card-wrap  selected" data-card-code="r1BD0yXncgOAnJztFjfgEZ3aPKHsjfyf" data-card-type="U" data-card-num-start="4111" data-card-num-end="1111" data-exp-mm="03" data-exp-yy="22" data-card-name="SUMEET SINGH" data-card-icon="visa">
+            <div class="icon-div">
+                <div class="visa-icon cdheight"></div>
+                <span class="input-group-addon icon iCard"></span>
+            </div>
+            <h3 class="cardNumber">4111 XXXX XXXX 1111</h3>
+            <div class="cdno">
+                <p class="cardname" data-cardname="SUMEET SINGH">SUMEET SINGH</p>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <h4 class="exp_date">03 / 22 </h4>
+                    </div>
+                    <div class="col-xs-5">
+                        <div class="formDom form-group">
+                            <input type="password" data-cardissuer="visa" class="form-control cvv" placeholder="CVV" maxlength="3">
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-content">
+        <div class="saved-card-wrap " data-card-code="CSe3ZoqTO3wm0EnttCUzRVEruUy2clTY" data-card-type="U" data-card-num-start="4323" data-card-num-end="3445" data-exp-mm="07" data-exp-yy="22" data-card-name="SUMEET SINGH" data-card-icon="visa">
+            <div class="icon-div">
+                <div class="visa-icon cdheight"></div>
+                <span class="input-group-addon icon iCard"></span>
+            </div>
+            <h3 class="cardNumber">4323 XXXX XXXX 3445</h3>
+            <div class="cdno">
+                <p class="cardname" data-cardname="SUMEET SINGH">SUMEET SINGH</p>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <h4 class="exp_date">07 / 22 </h4>
+                    </div>
+                    <div class="col-xs-5">
+                        <div class="formDom form-group">
+                            <input type="password" data-cardissuer="visa" class="form-control cvv" placeholder="CVV" maxlength="3">
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-content">
+        <div class="saved-card-wrap " data-card-code="qKHHtzmkL5szIYJ40GwLfSJfqdtpzLXi" data-card-type="D" data-card-num-start="5044" data-card-num-end="4013" data-exp-mm="12" data-exp-yy="34" data-card-name="FDFDF" data-card-icon="maestro">
+            <div class="icon-div">
+                <div class="maestro-icon cdheight"></div>
+                <span class="input-group-addon icon iCard"></span>
+            </div>
+            <h3 class="cardNumber">5044 XXXX XXXX 4013</h3>
+            <div class="cdno">
+                <p class="cardname" data-cardname="FDFDF">FDFDF</p>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <h4 class="exp_date">12 / 34 </h4>
+                    </div>
+                    <div class="col-xs-5">
+                        <div class="formDom form-group">
+                            <input type="password" data-cardissuer="maestro" class="form-control cvv" placeholder="CVV" maxlength="3">
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-content">
+        <div class="saved-card-wrap " data-card-code="mlaogSXiyCbvzsCheLcGYxbzxNObW3rH" data-card-type="C" data-card-num-start="3742" data-card-num-end="1008" data-exp-mm="07" data-exp-yy="22" data-card-name="SUMEET SINGH" data-card-icon="amex">
+            <div class="icon-div">
+                <div class="amex-icon cdheight"></div>
+                <span class="input-group-addon icon iCard"></span>
+            </div>
+            <h3 class="cardNumber">3742 XXXX XXXX 1008</h3>
+            <div class="cdno">
+                <p class="cardname" data-cardname="SUMEET SINGH">SUMEET SINGH</p>
+                <div class="row">
+                    <div class="col-xs-7">
+                        <h4 class="exp_date">07 / 22 </h4>
+                    </div>
+                    <div class="col-xs-5">
+                        <div class="formDom form-group">
+                            <input type="password" data-cardissuer="amex" class="form-control cvv" placeholder="CVV" maxlength="3">
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+        <div class="form-group svdsubmit">
+           <input type="button" value="Submit" id="paymentbtn" class="btn paygateway-submit">
+        </div>
+</div>
+</div>
+</div></div>
+
+            <div class="footer">
+                <div class="row">
+                    <div class="col-xs-6 footLogo">
+                        <div class="paylogo"></div>
+                    </div>
+                    <div class="col-xs-6 ">
+                        <div class="tablogo" style="display: none;"></div>
+                        <div class="epay-foot-logo" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+            <span class="only-mobile">
+                <div class="tnc mobtnc">
+                <p>Your transaction will appear on your bank or credit statement as 'airpay' or ''. To Cancel this transaction, please  <a id="cancel_transaction_main" class="cancel_transaction_main">click here</a></p>
+                </div>
+            </span>
+        </div>
+
+    </div>
+</div>
+<div class="tnc">
+    <p>Your transaction will appear on your bank or credit statement as 'airpay' or 'Airpay DH'. To Cancel this transaction, please  <a id="cancel_transaction_main" class="cancel_transaction_main">click here</a></p>
+</div>
+
+
+</div>
+    </div>
+
+<script type="text/javascript" src="resources/js/jquery.js"></script>
+<script type="text/javascript">
+	$("#paymentbtn").click(function () {
+		window.setTimeout(function() {
+			window.location.href = 'pay-listing.html';
+		}, 500);
+	});	
+</script>
+
+
+</body>
+</html>

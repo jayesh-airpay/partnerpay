@@ -1,0 +1,7 @@
+AuthName "partnerpay.co.in statistics"
+AuthType Basic
+AuthUserFile /home/partnerpay/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>

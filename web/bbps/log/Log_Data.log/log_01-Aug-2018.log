@@ -1,0 +1,13 @@
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+MAKE PAYMENT DATA RESPONSE : {"400":"Empty Make Payment Data"}
+MAKE PAYMENT DATA RESPONSE : {"400":"Empty Make Payment Data"}
+MAKE PAYMENT DATA RESPONSE : {"400":"Empty Make Payment Data"}
+MAKE PAYMENT DATA RESPONSE : {"400":"Empty Make Payment Data"}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+ADD BILLER API RESPONSE : {"STATUS":"400","MSG":"Data upload error."}
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}

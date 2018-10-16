@@ -1,0 +1,22 @@
+GET BILLER ID API RESPONSE : {"STATUS":"200","BILLERDATA":[{"BILLER_MASTER_ID":1,"BILLER_CATEGORY":"Electricity","BILLER_SUB_CATEGORY":"","BILLER_NAME":"BEST Mumbai","FIELDNAMES":"Consumer Number","VALIDATION":"^[0-9\\,]{10}$"},{"BILLER_MASTER_ID":2,"BILLER_CATEGORY":"Telecom","BILLER_SUB_CATEGORY":"Mobile","BILLER_NAME":"Vodafone Mumbai","FIELDNAMES":"Vodafone Number|Relationship Number|Customer Name","VALIDATION":"^[1-9]{1}[0-9]{9}$::^[0-9]{4,20}$::^[A-Za-z0-9\\#\\-\\_\\(\\.\\)\\s\\,\\&\\\/]{1,120}$"}]}
+GET BILLER ID API RESPONSE : {"STATUS":"200","BILLERDATA":[{"BILLER_MASTER_ID":1,"BILLER_CATEGORY":"Electricity","BILLER_SUB_CATEGORY":"","BILLER_NAME":"BEST Mumbai","FIELDNAMES":"Consumer Number","VALIDATION":"^[0-9\\,]{10}$"},{"BILLER_MASTER_ID":2,"BILLER_CATEGORY":"Telecom","BILLER_SUB_CATEGORY":"Mobile","BILLER_NAME":"Vodafone Mumbai","FIELDNAMES":"Vodafone Number|Relationship Number|Customer Name","VALIDATION":"^[1-9]{1}[0-9]{9}$::^[0-9]{4,20}$::^[A-Za-z0-9\\#\\-\\_\\(\\.\\)\\s\\,\\&\\\/]{1,120}$"}]}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+REGISTER DATA RESPONSE : {"USER_ID":"25806","CUSTOMER_ID":"1","AUTHENTICATOR":"9870626266","REFERENCE_NUMBER":"5","STATUS":"400","ERRMSG":"Data mismatch"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+ADD BILLER API RESPONSE : {"STATUS":"200","MSG":"Data uploaded successfully"}
+REGISTER DATA RESPONSE : {"USER_ID":"25806","CUSTOMER_ID":"1","AUTHENTICATOR":"9870626211","REFERENCE_NUMBER":"9","STATUS":"400","ERRMSG":"Data mismatch"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}
+GET BILLER ID API RESPONSE : {"STATUS":"400","MSG":"Empty Private Key"}

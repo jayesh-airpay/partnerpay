@@ -1,0 +1,94 @@
+
+.tile {
+    display: block;
+    cursor: pointer;
+    -webkit-perspective: 0;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 0.2s;
+    float: left;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    margin:5px;
+    padding: 5px;
+    opacity: 0.75;
+    background-color: #2e8bcc;
+}
+.tile h1,
+.tile h2,
+.tile h3,
+.tile h4,
+.tile h5,
+.tile h6 {
+    color: #ffffff;
+    -webkit-user-select: none;
+}
+.tile h2 {
+    font-size: 1.75em;
+
+    margin-left: 0px;
+    margin-bottom:-20px;
+}
+.tile h3,
+.tile h4 {
+    margin-top: -15px;
+}
+.tile h1.tile-text,
+.tile h2.tile-text,
+.tile h3.tile-text,
+.tile h4.tile-text {
+    margin-top: 43.333333333333336px;
+}
+.tile a:hover {
+    text-decoration: none;
+}
+.tile img {
+    border: 0;
+}
+.tile:hover {
+    opacity: 1;
+}
+.tile.tile-double {
+    width: 260px;
+}
+.tile.tile-blue {
+    background-color: #2e8bcc;
+}
+.tile.tile-green {
+    background-color: #339933;
+}
+.tile.tile-red {
+    background-color: #e51400;
+}
+.tile.tile-yellow {
+    background-color: #ffc40d;
+}
+.tile.tile-orange {
+    background-color: #f09609;
+}
+.tile.tile-pink {
+    background-color: #e671b8;
+}
+.tile.tile-purple {
+    background-color: #7b4f9d;
+}
+.tile.tile-lime {
+    background-color: #8cbf26;
+}
+.tile.tile-magenta {
+    background-color: #ff0097;
+}
+.tile.tile-teal {
+    background-color: #00aba9;
+}
+.tile span{color:#fff;}
+
+.tile span {line-height: 18px; display: inline-block;}
+
+.tile h2 {
+    font-size: 18px;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
