@@ -132,7 +132,11 @@ class SiteController extends Hcontroller
             if (Yii::$app->user->identity->USER_TYPE == 'guestuser' || Yii::$app->user->identity->USER_TYPE == 'partner') {
                 if (strpos($str, 'assignquotation') == false) {
                     if (Yii::$app->user->identity->USER_TYPE == 'partner') {
-                        return $this->redirect(['site/dashboard']);
+                        if (!empty(Yii::$app->user->identity->MERCHANT_ID) && Yii::$app->user->identity->MERCHANT_ID == '53') {
+                            return $this->redirect(['spicejet/agency']);
+                        } else {
+                            return $this->redirect(['site/dashboard']);
+                        }
                     }
                     return $this->redirect(['guest-user-doc/index']);
                 } else {

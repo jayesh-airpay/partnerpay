@@ -21,7 +21,7 @@ $theme = $this->theme;
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $theme->baseUrl. '/images/favicon.ico';?>">
     <?php $this->head(); ?>
     <link rel="stylesheet" href="<?php echo $theme->baseUrl. '/css/font-awesome.css';?>" type="text/css" />
-    <link rel="stylesheet" href="/bbps/js/jquery-ui/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo $theme->baseUrl. '/css/jquery-ui.min.css';?>" type="text/css" />
     <link rel="stylesheet" href="<?php echo $theme->baseUrl. '/css/custom.css'?>" type="text/css" />
       <link rel="stylesheet" href="<?php echo $theme->baseUrl. '/css/select2.css'?>" type="text/css" />
 
@@ -63,16 +63,16 @@ $this->beginBody();
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.js"></script>
-        <script type="text/javascript" src="/bbps/js/validate.js"></script>
-        <script src="/bbps/js/jquery.dataTables.min.js"></script>
-	
+        <script type="text/javascript" src="<?php echo $theme->baseUrl. '/js/validate.js';?>"></script>
+        <script src="<?php echo $theme->baseUrl. '/js/jquery.dataTables.min.js';?>"></script>
+
 </body>
 <script>$('.multiplebox').select2();</script>
 <script>
 $(document).ready(function(){
     var status = $("#q_status").val();
    if(status == 'Executed'){
-     
+
       $("input[type=radio]").attr('disabled', true);
    }else{
       $("input[type=radio]").attr('enabled', true);
@@ -91,15 +91,15 @@ $("#quotation-merchant_id").change(function () {
         chargeValRegex = /[+-]?([0-9]*[.])?[0-9]+/;
         $('.error-msg').html('');
         var validate = true;
-        
+
         var pomaster_amount = parseInt($("#pomaster-amount").val());
         var a_pomaster_amount = parseInt($("#pomaster-amount").attr('data-amount'));
-       
+
         if(pomaster_amount > a_pomaster_amount){
            $("#pomaster-amount").next('.help-block').text('Amount can not be greater than '+$("#pomaster-amount").attr('data-amount')).css('color','#d01d19');
            validate = false;
         }
-  
+
         $('input[name^="charge_name"]').each(function() {
 
             if($(this).val() == ''){
@@ -132,12 +132,12 @@ $("#quotation-merchant_id").change(function () {
 $(document).ready(function(){
 
   $('#invoice-po_id').change(function(){
- 
+
      var po_number = $("#invoice-po_id").val();
      host = window.location.hostname;
-     
+
      $.ajax({
-        url: "invoice/partnerdata", 
+        url: "invoice/partnerdata",
         method : 'post',
         data : {"po_number":po_number},
         success: function(result){
@@ -146,15 +146,15 @@ $(document).ready(function(){
            }else{
                alert('Unable to get partner details plz try after some time.');
            }
-            
+
         }
     });
 });
-   
+
   $("#pomaster-partner_id").change(function(){
      var partner_id = $("#pomaster-partner_id").val();
      $.ajax({
-        url: "/po/quotationlist", 
+        url: "/po/quotationlist",
         method : 'post',
         data : {"id":partner_id},
         success: function(result){
@@ -165,7 +165,7 @@ $(document).ready(function(){
 
     var status = $("#q_status").val();
    if(status == 'Executed'){
-     
+
       $("input[type=radio]").attr('disabled', true);
    }else{
       $("input[type=radio]").attr('enabled', true);
@@ -194,9 +194,9 @@ $('.po_status').change(function(){
      var status  = $('input[name=status]:checked').val();
      var po_id = $("#PO_ID").val();
      host = window.location.hostname;
- 
+
      $.ajax({
-        url: "/po/changestatus", 
+        url: "/po/changestatus",
         method : 'post',
         data : {"id":po_id,"status":status},
         success: function(result){
@@ -215,9 +215,9 @@ $('.po_status').change(function(){
 });
 
 $("#invoice-po_id").change(function(){
-      var po_id = $(this).val(); 
+      var po_id = $(this).val();
       $.ajax({
-        url: "/po/invoiceamt", 
+        url: "/po/invoiceamt",
         method : 'post',
         data : {"po_id":po_id},
         dataType: "json",
@@ -253,7 +253,7 @@ $("#po").change(function () {
 /*old code
   po_val =  $("#po").val();
 
-  
+
   if(po_val !== null){
     po_val  = po_val.toString();
     po_val  = po_val.slice(-2);
@@ -289,17 +289,17 @@ $("#po").change(function () {
 
 
   if (counter <= 50){
- 
+
     if($("#invoice_"+counter).length){
         counter++;
     }
-    
+
     var k = parseInt(counter);
 
     if(counter != invoicecounter){
       $(".viewDetails").append("<div class='row viewrow' id='invoice_"+counter+"'><div class='col-sm-6 col-md-4'>PO Number : "+po_data_rev[po_val]+"<input type='hidden' name='po"+counter+"' value='"+po_val+"' id='"+po_val+"' class='amountcheck' data-counter='"+counter+"'><div class='form-group req'><input type='text' class='form-control' placeholder='Invoice Number' id='refnum"+counter+"' name='refnum"+counter+"'><div class='validationAlert hasError help-block' style='color:#d01d19;' id='refnum"+counter+"_err'></div></div><div class='form-group req'><input type='text' class='form-control' placeholder='Invoice Amount' id='invamt"+counter+"' name='invamt"+counter+"'><div class='validationAlert hasError help-block' style='color:#d01d19;' id='invamt"+counter+"_err'></div></div><div class='form-group req'><input type='text' class='form-control' placeholder='Tax Amount' id='txamt"+counter+"' name='txamt"+counter+"'><div class='validationAlert hasError help-block' style='color:#d01d19;' id='txamt"+counter+"_err'></div></div><div class='form-group'><div class='form-control req file'><input type='file' class='updoc"+ k +"' title='Upload Chalan' id='updoc"+counter+"' name='updoc"+counter+"'><span>(Only pdf,doc,docx,xls and xlsx files are allowed)</span><div class='validationAlert hasError help-block' style='color:#d01d19;' id='updoc"+counter+"_err'></div></div></div><div class='form-group'><!--<a href='javascript:void(0);' class='btn btn-default remove'  data-num='"+counter+"'><i></i> Delete </a>--></div>");
         $('.updoc'+ k +'').bootstrapFileInput();
-        $('.remove').click(function () { 
+        $('.remove').click(function () {
             datanum = $(this).attr('data-num');
             counter = counter -1;
             $(this).parents('.viewrow').fadeOut();
@@ -338,7 +338,7 @@ $("#po").change(function () {
       //alert('hi');
   });
 $(document).ready(function(){
-    
+
     if($("#qr").val() == 'Y'){
       $("#merchantmaster-create_qr").attr('checked',true);
     }
