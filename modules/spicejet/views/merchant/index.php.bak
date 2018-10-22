@@ -1,8 +1,8 @@
 
-    <link rel="shortcut icon" type="image/x-icon" href="/partnerpay/web/spicejet/resources/images/favicon.ico">
-        <link rel="stylesheet" href="/partnerpay/web/spicejet/resources/css/bootstrap.css" type="text/css" />
-        <link rel="stylesheet" href="/partnerpay/web/spicejet/resources/css/font-awesome.css" type="text/css" />
-        <link rel="stylesheet" href="/partnerpay/web/spicejet/resources/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../resources/images/favicon.ico">
+        <link rel="stylesheet" href="../resources/css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="../resources/css/font-awesome.css" type="text/css" />
+        <link rel="stylesheet" href="../resources/css/custom.css" type="text/css" />
 
 <div class="wrapper">
 <div class="container">
@@ -14,7 +14,7 @@
 			<li class="active"><a href="#userlist" aria-controls="userlist" role="tab" data-toggle="tab">User Listing</a></li>
 			<li><a href="#cardapp" aria-controls="cardapp"  onClick="get_cards()" role="tab" data-toggle="tab">Card Approval</a></li>
 			<li><a href="#group" aria-controls="group" onClick="get_group()" role="tab" data-toggle="tab">Create Group</a></li>
-			<li><a href="#accmange" aria-controls="accmange" onClick="account_mangement()" role="tab" data-toggle="tab">Account Management</a></li>
+			<li><a href="#accmange" aria-controls="accmange" role="tab" data-toggle="tab">Account Management</a></li>
 			<li><a href="#transOpe" aria-controls="transOpe" role="tab" data-toggle="tab">Transaction Operations</a></li>
 			<li><a href="#limit" aria-controls="limit" role="tab" onClick="set_limit()" data-toggle="tab">Manage Limit</a></li>
 		</ul>
@@ -88,7 +88,7 @@
                         			$total_pages = floor($agent_count[0]['total']/2)+1; 
                      		} ?>
 					  <ul class="pager pull-right">
-						<li><a href="javascript:void(0)" id="1"  onClick="previous()" class="previous"><span class="glyphicon glyphicon-chevron-left"></a></li>
+						<li><a href="javascript:void(0)" id="1" class="previous 0" onClick="previous()" class="previous"><span class="glyphicon glyphicon-chevron-left"></a></li>
 						<li><a href="javascript:void(0)" id="1" data-max="<?= $total_pages;?>" onClick="next()" class="next"><span class="glyphicon glyphicon-chevron-right"></a></li>
 					  </ul>
 							</nav>
@@ -107,7 +107,7 @@
 				
 				<div class="tablebox">	
 						<div class="table-responsive">
-						<table class="table table-striped table-bordered text-center" id="card">
+						<table class="table table-striped table-bordered text-center">
 						<thead>
 						<tr>
 							<th class="text-center idnum">#</th>
@@ -118,15 +118,15 @@
 						</tr>
 						<tr class="searchrow">
 							<td class="idnum">&nbsp;</td>
-							<td><input type="text" class="form-control searchid card_list_search" id="agent_id_search" ></td>
-							<td><input type="text" class="form-control searchid card_list_search" id="card_email_search"></td>
-							<td><input type="text" class="form-control searchid card_list_search" id="payment_instrument_search"></td>
+							<td><input type="text" class="form-control searchid" id="agent_id_search" ></td>
+							<td><input type="text" class="form-control searchid" id="email_search"></td>
+							<td><input type="text" class="form-control searchid" id="payment_instrument_search"></td>
 							<td class="action">&nbsp;</td>
 						</tr>
 						</thead>
 						
 						<tbody>
-								<!-- <tr>
+								<tr>
 									<td class="idnum">1</td>
 									<td>bom352905</td>
 									<td>rohit.verma@gmail.com</td>
@@ -134,12 +134,12 @@
 									<td class="action">
 										<div class="bbox bbox4">
 											<a href="#" title="Approve" data-toggle="modal" data-target="#approve"><span class="glyphicon glyphicon-ok"></span></a>
-											<a href="#" title="Reject"><span class="glyphicon glyphicon-remove"></span></a> -->
+											<a href="#" title="Reject"><span class="glyphicon glyphicon-remove"></span></a>
 											<!-- <a href="#" title="Update agent details"><span class="glyphicon glyphicon-pencil"></span></a>
 											<a href="#" title="Delect"><span class="glyphicon glyphicon-trash"></span></a> -->
-										<!-- </div>
+										</div>
 									</td>
-								</tr> -->
+								</tr>
 								</tbody>
 
 						
@@ -148,7 +148,7 @@
 					</div>
 						<nav class="pagenav">
 						<ul class="pager pull-right">
-							<li><a href="javascript:void(0)" id="1"  onClick="previous_card()" class="previous_card"><span class="glyphicon glyphicon-chevron-left"></a></li>
+							<li><a href="javascript:void(0)" id="1" class="previous 0" onClick="previous_card()" class="previous_card"><span class="glyphicon glyphicon-chevron-left"></a></li>
 							<li><a href="javascript:void(0)" id="1" data-max="" onClick="next_card()" class="next_card"><span class="glyphicon glyphicon-chevron-right"></a></li>
 					 	</ul>
 						</nav>
@@ -157,11 +157,10 @@
 			<div role="tabpanel" class="tab-pane" id="accmange">
 					<div class="page-header">
 						<h4>Account Management</h4>
-						<a data-toggle="modal" data-target="#addmerchant" title="Edit"><input type="button" id="add_new" name="add_new" value="ADD NEW" style="float:right"></a>
 					</div>
 					<div class="tablebox">	
 						<div class="table-responsive">
-						<table class="table table-striped table-bordered text-center" id="account">
+						<table class="table table-striped table-bordered text-center">
 						<thead>
 						<tr>
 							<th class="text-center idnum">#</th>
@@ -181,7 +180,7 @@
 						</thead>
 						
 						<tbody>
-								<!-- <tr>
+								<tr>
 									<td class="idnum">1</td>
 									<td>Rohit Verma</td>
 									<td>rohit.verma@gmail.com</td>
@@ -193,7 +192,33 @@
 											<a href="#" title="Delect"><span class="glyphicon glyphicon-trash"></span></a>
 										</div>
 									</td>
-								</tr> -->
+								</tr>
+								<tr>
+									<td class="idnum">2</td>
+									<td>Kavi Travels</td>
+									<td>kavi.travels@gmail.com</td>
+									<td>Merchant Admin</td>
+									<td>23 Sep 2018</td>
+									<td class="action">
+										<div class="bbox">
+											<a href="#" data-toggle="modal" data-target="#editmerchant" title="Edit"><span class="glyphicon glyphicon-pencil"></span></a>
+											<a href="#" title="Delect"><span class="glyphicon glyphicon-trash"></span></a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="idnum">3</td>
+									<td>Abhi Sinha</td>
+									<td>abhi.sinha@gmail.com</td>
+									<td>Merchant Admin</td>
+									<td>23 Sep 2018</td>
+									<td class="action">
+										<div class="bbox">
+											<a href="#" data-toggle="modal" data-target="#editmerchant" title="Edit"><span class="glyphicon glyphicon-pencil"></span></a>
+											<a href="#" title="Delect"><span class="glyphicon glyphicon-trash"></span></a>
+										</div>
+									</td>
+								</tr>
 								</tbody>
 
 						
@@ -201,10 +226,10 @@
 						</div>
 					</div>
 						<nav class="pagenav">
-						<ul class="pager pull-right">
-							<li><a href="javascript:void(0)" id="1"  onClick="previous_account()" class="previous_account"><span class="glyphicon glyphicon-chevron-left"></a></li>
-							<li><a href="javascript:void(0)" id="1" data-max="" onClick="next_account()" class="next_account"><span class="glyphicon glyphicon-chevron-right"></a></li>
-					 	</ul>
+							  <ul class="pager pull-right">
+							<li><a href="#"><span class="glyphicon glyphicon-chevron-left"></a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-chevron-right"></a></li>
+						  </ul>
 						</nav>				
 			</div>
 			
@@ -689,38 +714,32 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Agent details </h4>
       </div>
-	  <div class="modal-body hidden" id="ungrouped">
-							 <span style="colour:red"> PLEASE ADD AGENT TO A GROUP </span>
-	  </div>
-      <div class="modal-body hidden" id="grouped">
+      <div class="modal-body">
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="form-group">
-					Agent ID:<span id="card_agent"> </span>
+					Agent ID: bom59302
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-6">
-				<div class="form-group req" id="group_id_div">
-				<input type="text" class="form-control" placeholder="Group ID" id="group_id" name="group_id" disabled>
-				<div class="help-block" id = 'group_id_error'></div>
+				<div class="form-group req">
+				<input type="text" class="form-control" placeholder="Group ID">
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-6">
-				<div class="form-group req" id="mobile_no_div">
-				<input type="text" class="form-control" placeholder="Mobile" id="mobile_no" name="mobile_no">
-				<input type="hidden" value="" name="agent_payment_config_id" id="agent_payment_config_id">
-				<div class="help-block" id = 'mobile_no_error'></div>
+				<div class="form-group req">
+				<input type="text" class="form-control" placeholder="Mobile">
 				</div>
 			</div>
 		</div>	
 		<div class="row">
 			<div class="col-sm-6 col-md-5 col-lg-4">
 				<div class="form-group">					
-				<input type="submit" class="btn btn-primary lg-btn" id="update_card_status" value="Update">
+				<input type="submit" class="btn btn-primary lg-btn" id="updatebtn" value="Update"  data-dismiss="modal" aria-label="Close">
 				</div>
 			</div>
 		</div>
@@ -746,34 +765,29 @@
       <div class="modal-body">		
 			<div class="row">
 				<div class="col-sm-6 col-md-5">
-					<div class="form-group" id="fname_div">
-						<input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" value="">
-						<div class="help-block" id = 'fname_error'></div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="First Name">
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-5">
-					<div class="form-group req" id="lname_div">
-						<input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" value="">
-						<div class="help-block" id = 'lname_error'></div>
+					<div class="form-group req">
+						<input type="text" class="form-control" placeholder="Last Name">
 					</div>
 				</div>
 			</div>	
 			<div class="row">
 				<div class="col-sm-6 col-md-5">
-					<div class="form-group" id="mail_div">
-						<input type="text" class="form-control" placeholder="Email" id="mail" name="mail" value="">
-						<div class="help-block" id = 'mail_error'></div>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Email">
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-5">
-					<div class="form-group req" id="mob_div">
-						<input type="text" class="form-control" placeholder="Mobile" id="mob" name="mob" value="">
-						<input type="hidden" name="userid" id="userid" value="">
-						<div class="help-block" id = 'mob_error'></div>
+					<div class="form-group req">
+						<input type="text" class="form-control" placeholder="Mobile">
 					</div>
 				</div>
 			</div>
-			<!-- <div class="row">
+			<div class="row">
 				<div class="col-sm-12">
 					<label>Permissions</label>
 					<div class="checkbox checkbox-list">
@@ -792,12 +806,12 @@
 
 					</div>
 				</div>
-			</div> -->
+			</div>
 		
 		<div class="row">
 			<div class="col-sm-6 col-md-5 col-lg-4">
 				<div class="form-group">					
-				<input type="submit" class="btn btn-primary lg-btn" id="update_account" value="Update">
+				<input type="submit" class="btn btn-primary lg-btn" id="updatebtn" value="Update"  data-dismiss="modal" aria-label="Close">
 				</div>
 			</div>
 		</div>
@@ -889,78 +903,7 @@
   </div>
 </div>
 
-<!-- MODAL -->
-<div class="modal fade" id="addmerchant" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Add Merchant User </h4>
-      </div>
-      <div class="modal-body">		
-			<div class="row">
-				<div class="col-sm-6 col-md-5">
-					<div class="form-group" id="add_fname_div">
-						<input type="text" class="form-control" placeholder="First Name" id="add_fname" name="add_fname" value="">
-						<div class="help-block" id = 'add_fname_error'></div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-5">
-					<div class="form-group req" id="add_lname_div">
-						<input type="text" class="form-control" placeholder="Last Name" id="add_lname" name="add_lname" value="">
-						<div class="help-block" id = 'add_lname_error'></div>
-					</div>
-				</div>
-			</div>	
-			<div class="row">
-				<div class="col-sm-6 col-md-5">
-					<div class="form-group" id="add_mail_div">
-						<input type="text" class="form-control" placeholder="Email" id="add_mail" name="add_mail" value="">
-						<div class="help-block" id = 'add_mail_error'></div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-5">
-					<div class="form-group req" id="add_mob_div">
-						<input type="text" class="form-control" placeholder="Mobile" id="add_mob" name="add_mob" value="">
-						<div class="help-block" id = 'add_mob_error'></div>
-					</div>
-				</div>
-			</div>
-			<!-- <div class="row">
-				<div class="col-sm-12">
-					<label>Permissions</label>
-					<div class="checkbox checkbox-list">
-						<label class="checkbox-inline">
-						  <input type="checkbox" id="inlineCheckbox1" value="option1">Merchant Admin
-						</label>
-						<label class="checkbox-inline">
-						  <input type="checkbox" id="inlineCheckbox2" value="option2"> Merchant Finance/Ops
-						</label>
-						<label class="checkbox-inline">
-						  <input type="checkbox" id="inlineCheckbox3" value="option3"> Merchant Designer
-						</label>
-						<label class="checkbox-inline">
-						  <input type="checkbox" id="inlineCheckbox3" value="option4"> Merchant Sales
-						</label>
 
-					</div>
-				</div>
-			</div> -->
-		
-		<div class="row">
-			<div class="col-sm-6 col-md-5 col-lg-4">
-				<div class="form-group">					
-				<input type="submit" class="btn btn-primary lg-btn" id="add_account" value="ADD">
-				</div>
-			</div>
-		</div>
-      </div>
-   
-    </div>
-  </div>
-</div>
-
-<!-- END MODAL -->
 
 <!-- jQuery -->
 <script type="text/javascript" src="../resources/js/jquery.js"></script>
@@ -1072,6 +1015,7 @@
 						$('#mapagency').modal('hide');
 						$('.modal-backdrop').remove();
 					  if(data =='1'){
+						
 						$('.notification').html('Agent mapped successfully');
 					  	$('.notification').removeClass('hidden');
 					  	setTimeout(function(){
@@ -1091,114 +1035,6 @@
 		}
 	});	
 	
-	$('#update_card_status').click(function(){
-		validate = card_approve_validation();
-		if(validate){
-			var group_id = $('#group_id').val();
-			var mobile_no = $('#mobile_no').val();
-			var agent_payment_config_id = $('#agent_payment_config_id').val();
-			$.ajax({
-      			url: "/partnerpay/web/spicejet/merchant/approvecard",  
-      			data: {id:agent_payment_config_id,groupid:group_id,mobile_number:mobile_no},
-     			type: "POST",
-      			dataType: "json",
-      			success: function(data) {
-						$('#approve').modal('hide');
-						$('.modal-backdrop').remove();
-					  if(data =='1'){
-						$('.notification').html('Card aproved successfully');
-					  	$('.notification').removeClass('hidden');
-					  	setTimeout(function(){
-                    		$('.notification').empty();
-                    		$('.notification').addClass('hidden');
-                		}, 2000);
-					  }else{
-						$('.notification').html('Error while approving card');
-					  	$('.notification').removeClass('hidden');
-					  	setTimeout(function(){
-                    		$('.notification').empty();
-                    		$('.notification').addClass('hidden');
-                		}, 2000);
-					  }
-					  get_cards();
-      			}
-   			});
-		}
-	});
-
-	$('#update_account').click(function(){
-		validate = account_validation();
-		if(validate){
-			var fname = $('#fname').val();
-			var lname = $('#lname').val();
-			var mail = $('#mail').val();
-			var mobile_no = $('#mob').val();
-			var userid = $('#userid').val();
-			$.ajax({
-      			url: "/partnerpay/web/spicejet/merchant/updateaccount",  
-      			data: {id:userid,email:mail,firstname:fname,lastname:lname,mobile_number:mobile_no},
-     			type: "POST",
-      			dataType: "json",
-      			success: function(data) {
-						$('#editmerchant').modal('hide');
-						$('.modal-backdrop').remove();
-					  if(data =='1'){
-						$('.notification').html('Account updated successfully');
-					  	$('.notification').removeClass('hidden');
-					  	setTimeout(function(){
-                    		$('.notification').empty();
-                    		$('.notification').addClass('hidden');
-                		}, 2000);
-					  }else{
-						$('.notification').html('Error while updating account');
-					  	$('.notification').removeClass('hidden');
-					  	setTimeout(function(){
-                    		$('.notification').empty();
-                    		$('.notification').addClass('hidden');
-                		}, 2000);
-					  }
-					  account_mangement();
-      			}
-   			});
-		}
-	});
-
-	$('#add_account').click(function(){
-		validate = add_account_validation();
-		if(validate){
-			var fname = $('#add_fname').val();
-			var lname = $('#add_lname').val();
-			var mail = $('#add_mail').val();
-			var mobile_no = $('#add_mob').val();
-			$.ajax({
-      			url: "/partnerpay/web/spicejet/merchant/addaccount",  
-      			data: {email:mail,firstname:fname,lastname:lname,mobile_number:mobile_no},
-     			type: "POST",
-      			dataType: "json",
-      			success: function(data) {
-						$('#addmerchant').modal('hide');
-						$('.modal-backdrop').remove();
-					  if(data =='1'){
-						$('.notification').html('Account added successfully');
-					  	$('.notification').removeClass('hidden');
-					  	setTimeout(function(){
-                    		$('.notification').empty();
-                    		$('.notification').addClass('hidden');
-                		}, 2000);
-					  }else{
-						$('.notification').html('Error while adding account');
-					  	$('.notification').removeClass('hidden');
-					  	setTimeout(function(){
-                    		$('.notification').empty();
-                    		$('.notification').addClass('hidden');
-                		}, 2000);
-					  }
-					  account_mangement();
-      			}
-   			});
-		}
-	});
-
 	$('#groupid').on('change', function (e) {
 		$('.limitbox').show();
 	});
@@ -1223,22 +1059,6 @@
 					$('#overall_group_limit').val("");
 					$('#credit_card_upper_limit').val("");
 					$('#credit_card_lower_Limit').val("");
-
-					$('#netbanking_limit_error').empty();
-					$('#netbanking_limit_div').removeClass('has-error');
-					
-					$('#debit_card_limit_error').empty();
-					$('#debit_card_limit_div').removeClass('has-error');
-
-					$('#overall_group_limit_error').empty();
-					$('#overall_group_limit_div').removeClass('has-error');
-
-					$('#credit_card_upper_limit_error').empty();
-					$('#credit_card_upper_limit_div').removeClass('has-error');
-
-					$('#credit_card_lower_Limit_error').empty();
-					$('#credit_card_lower_Limit_div').removeClass('has-error');
-
 					$('#groupid').val("");
 					  if(data =='1'){
 						$('.notification').html('Agent mapped successfully');
@@ -1267,7 +1087,7 @@
 function validation(){
 	validate = true;
 	if(!(/^[0-9]+$/i.test($('#agent_id').val()))){
-		$('#agent_id_error').empty().html('Improper Agent Id');
+		$('#c_error').empty().html('Improper Agent Id');
 		$('#agent_id_div').addClass('has-error');
 		validate = false;
 	}
@@ -1354,66 +1174,6 @@ function limit_validation(){
 	return validate;
 }
 
-function card_approve_validation(){
-	validate = true;
-	if(!(/^\d{10}$/.test($('#mobile_no').val()))){
-		$('#mobile_no_error').empty().html('Invalid mobile number');
-		$('#mobile_no_div').addClass('has-error');
-		validate = false;
-	}
-	return validate;
-}
-
-function account_validation(){
-	validate = true;
-	if(!(/^[A-Za-z]+$/i.test($('#fname').val()))){
-		$('#fname_error').empty().html('Invalid first name');
-		$('#fname_div').addClass('has-error');
-		validate = false;
-	}
-	if(!(/^[A-Za-z]+$/i.test($('#lname').val()))){
-		$('#lname_error').empty().html('Invalid last name');
-		$('#lname_div').addClass('has-error');
-		validate = false;
-	}
-	if(!(/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test($('#mail').val()))){
-		$('#mail_error').empty().html('Invalid email id');
-		$('#mail_div').addClass('has-error');
-		validate = false;
-	}
-	if(!(/^\d{10}$/.test($('#mob').val()))){
-		$('#mob_error').empty().html('Invalid mobile number');
-		$('#mob_div').addClass('has-error');
-		validate = false;
-	}
-	return validate;
-}
-
-function add_account_validation(){
-	validate = true;
-	if(!(/^[A-Za-z]+$/i.test($('#add_fname').val()))){
-		$('#add_fname_error').empty().html('Invalid first name');
-		$('#add_fname_div').addClass('has-error');
-		validate = false;
-	}
-	if(!(/^[A-Za-z]+$/i.test($('#add_lname').val()))){
-		$('#add_lname_error').empty().html('Invalid last name');
-		$('#add_lname_div').addClass('has-error');
-		validate = false;
-	}
-	if(!(/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test($('#add_mail').val()))){
-		$('#add_mail_error').empty().html('Invalid email id');
-		$('#add_mail_div').addClass('has-error');
-		validate = false;
-	}
-	if(!(/^\d{10}$/.test($('#add_mob').val()))){
-		$('#add_mob_error').empty().html('Invalid mobile number');
-		$('#add_mob_div').addClass('has-error');
-		validate = false;
-	}
-	return validate;
-}
-
 function approve(id){
 	$('#agent_id_error').empty();
 	$('#agent_id_div').removeClass('has-error');
@@ -1422,34 +1182,6 @@ function approve(id){
 	$('#agent_details_id').val(id);
 }
 
-function edit_account(id){
-	$('#userid').val(id);
-}
-
-function approve_card(id){
-	$('#group_id_error').empty();
-	$('#group_id_div').removeClass('has-error');
-	$('#mobile_no_error').empty();
-	$('#mobile_no_div').removeClass('has-error');
-	$('#ungrouped').addClass('hidden');
-	$('#grouped').addClass('hidden');
-	$.ajax({
-      		url: "/partnerpay/web/spicejet/merchant/checkagentingroup",  
-      		data: {agent_payment_config_id: id},
-     		type: "POST",
-      		dataType: "json",
-      		success: function(data) {
-            		if(data.status =='1'){
-						$('#grouped').removeClass('hidden');
-						$('#card_agent').empty().html(data.AGENT_ID);
-						$('#group_id').val(data.GROUP_ID);
-						$('#agent_payment_config_id').val(id);
-					  }else{
-						$('#ungrouped').removeClass('hidden');
-					  }
-      		}
-   		})
-}
 function map_agent(group_id,group_name){
 	$('#group_id_map').val(group_id);
 	$('#group_name_map').val(group_name);
@@ -1459,10 +1191,6 @@ $('.agent_list_search').change(function(){
 	getdata();
 })
 
-$('.card_list_search').change(function(){
-	get_cards();
-})
-
 function reject(id){
 	$.ajax({
       		url: "/partnerpay/web/spicejet/merchant/reject",  
@@ -1470,49 +1198,7 @@ function reject(id){
      		type: "POST",
       		dataType: "json",
       		success: function(data) {
-            	if(data =='1'){
-						$('.notification').html('Agent rejected successfully');
-					  	$('.notification').removeClass('hidden');
-					  	setTimeout(function(){
-                    		$('.notification').empty();
-                    		$('.notification').addClass('hidden');
-                		}, 2000);
-					  }else{
-						$('.notification').html('Error while rejecting agent');
-					  	$('.notification').removeClass('hidden');
-					  	setTimeout(function(){
-                    		$('.notification').empty();
-                    		$('.notification').addClass('hidden');
-                		}, 2000);
-					  }
-					  getdata();
-      		}
-   		})
-}
-
-function reject_card(id){
-	$.ajax({
-      		url: "/partnerpay/web/spicejet/merchant/rejectcard",  
-      		data: {AGENT_PAYMENT_CONFIG_ID: id},
-     		type: "POST",
-      		dataType: "json",
-      		success: function(data) {
-            	if(data =='1'){
-						$('.notification').html('Card rejected successfully');
-					  	$('.notification').removeClass('hidden');
-					  	setTimeout(function(){
-                    		$('.notification').empty();
-                    		$('.notification').addClass('hidden');
-                		}, 2000);
-					  }else{
-						$('.notification').html('Error while rejecting card');
-					  	$('.notification').removeClass('hidden');
-					  	setTimeout(function(){
-                    		$('.notification').empty();
-                    		$('.notification').addClass('hidden');
-                		}, 2000);
-					  }
-					  get_cards();
+            	console.log(data);
       		}
    		})
 }
@@ -1579,68 +1265,6 @@ function previous_group(){
 	}
 }
 
-function next_card(){
-	var current_page = parseInt($('.next_card').attr('id'));
-	var last_page = $('.next_card').data('max');
-	var next_page = current_page+1;
-	if(next_page<=last_page){
-		$('.next_card').attr('id',next_page);
-		$('.previous_card').attr('id',next_page);
-		if(next_page == last_page){
-			$('.next_card').addClass('hidden');
-		}
-		if(next_page >1){
-			$('.previous_card').removeClass('hidden');
-		}
-		get_cards();
-	}
-}
-
-function previous_card(){
-	var current_page = $('.previous_card').attr('id');
-	if((parseInt(current_page)-1) != 0){
-		var previous_page = current_page-1;
-		$('.next_card').attr('id',previous_page);
-		$('.previous_card').attr('id',previous_page);
-		$('.next_card').removeClass('hidden');
-		if(previous_page == 1){
-			$('.previous_card').addClass('hidden');
-		}
-		get_cards();
-	}
-}
-
-function next_account(){
-	var current_page = parseInt($('.next_account').attr('id'));
-	var last_page = $('.next_account').data('max');
-	var next_page = current_page+1;
-	if(next_page<=last_page){
-		$('.next_account').attr('id',next_page);
-		$('.previous_account').attr('id',next_page);
-		if(next_page == last_page){
-			$('.next_account').addClass('hidden');
-		}
-		if(next_page >1){
-			$('.previous_account').removeClass('hidden');
-		}
-		account_mangement();
-	}
-}
-
-function previous_account(){
-	var current_page = $('.previous_account').attr('id');
-	if((parseInt(current_page)-1) != 0){
-		var previous_page = current_page-1;
-		$('.next_account').attr('id',previous_page);
-		$('.previous_account').attr('id',previous_page);
-		$('.next_account').removeClass('hidden');
-		if(previous_page == 1){
-			$('.previous_account').addClass('hidden');
-		}
-		account_mangement();
-	}
-}
-
 function getdata(){
 	var company_name= $('#company_search').val();
 	var fname= $('#fname_search').val();
@@ -1699,7 +1323,7 @@ function get_group(){
 						}else{
 							var checked="";
 						}
-					table_data = table_data+'<tr><td>'+(parseInt(index)+1)+'</td><td>'+value['GROUP_NAME']+'</td><td><div class="onoffswitch"><input type="checkbox"  id="onoffswitch'+(parseInt(index)+1)+'" name="group_status_'+value['AGNET_GROUP_ID']+'" onClick="Change_group_status('+value['AGNET_GROUP_ID']+')" class="onoffswitch-checkbox" '+checked+'><label class="onoffswitch-label" for="onoffswitch'+(parseInt(index)+1)+'"><span class="onoffswitch-inner"></span><span class="onoffswitch-switch"></span></label></div></td><td>'+date.getDate()+'-' + (date.getMonth()+1) + '-'+date.getFullYear()+'</td><td class="action"><div class="bbox"><a onClick="map_agent('+value['AGNET_GROUP_ID']+',\''+value['GROUP_NAME']+'\')" data-toggle="modal" data-target="#mapagency" title="Edit"><span class="glyphicon glyphicon-cog"></span></a></div></td></tr>';
+					table_data = table_data+'<tr><td>'+(parseInt(index)+1)+'</td><td>'+value['GROUP_NAME']+'</td><td><div class="onoffswitch"><input type="checkbox"  id="onoffswitch1" name="group_status_'+value['AGNET_GROUP_ID']+'" onClick="Change_group_status('+value['AGNET_GROUP_ID']+')" class="onoffswitch-checkbox" '+checked+'><label class="onoffswitch-label" for="onoffswitch1"><span class="onoffswitch-inner"></span><span class="onoffswitch-switch"></span></label></div></td><td>'+date.getDate()+'-' + (date.getMonth()+1) + '-'+date.getFullYear()+'</td><td class="action"><div class="bbox"><a onClick="map_agent('+value['AGNET_GROUP_ID']+',\''+value['GROUP_NAME']+'\')" data-toggle="modal" data-target="#mapagency" title="Edit"><span class="glyphicon glyphicon-cog"></span></a></div></td></tr>';
 								});
 				}else{
 					table_data = "<tr><td colspan='5'> No data Found</td></tr>"
@@ -1754,39 +1378,8 @@ function set_limit(){
 
 function get_cards(){
 	var current_page = $('.next_card').attr('id');
-	var agent_id_search= $('#agent_id_search').val();
-	var card_email_search= $('#card_email_search').val();
-	var payment_instrument_search= $('#payment_instrument_search').val();
 	$.ajax({
       		url: "/partnerpay/web/spicejet/merchant/getcards",  
-      		data: {page:current_page,agent_id:agent_id_search,email:card_email_search,payment_search:payment_instrument_search},
-     		type: "POST",
-      		dataType: "json",
-      		success: function(data) {
-				  table_data = "";
-            	if(data['count_data'][0]['total']>0){
-					$.each(data['list_data'],function (index,value){
-						// var date = new Date(value['CREATED_DATE'] * 1000);
-						table_data = table_data+'<tr><td class="idnum">'+(parseInt(index)+1)+'</td><td>'+value['AGENT_ID']+'</td><td>'+value['EMAIL']+'</td><td>'+value['CARD_NUMBER']+'</td><td class="action"><div class="bbox bbox4"><a title="Approve" onClick="approve_card('+value["AGENT_PAYMENT_CONFIG_ID"]+')" data-toggle="modal" data-target="#approve"><span class="glyphicon glyphicon-ok"></span></a><a title="Reject" onClick="reject_card('+value["AGENT_PAYMENT_CONFIG_ID"]+')" ><span class="glyphicon glyphicon-remove"></span></a></div></td></tr>';
-								});
-				}else{
-					table_data = "<tr><td colspan='5'> No data Found</td></tr>"
-				}
-				$('#card tbody').empty().append(table_data);
-				if(parseInt(data['count_data'][0]['total']) % 2 == 0){
-                    var total_pages =parseInt(data['count_data'][0]['total'])/2;
-				} else {
-                    var total_pages = Math.floor(parseInt(data['count_data'][0]['total'])/2)+1; 
-                }
-				$('.next_card').attr('data-max',total_pages);
-      		}
-   		})
-}
-
-function account_mangement(){
-	var current_page = $('.next_account').attr('id');
-	$.ajax({
-      		url: "/partnerpay/web/spicejet/merchant/getaccounts",  
       		data: {page:current_page},
      		type: "POST",
       		dataType: "json",
@@ -1794,19 +1387,24 @@ function account_mangement(){
 				  table_data = "";
             	if(data['count_data'][0]['total']>0){
 					$.each(data['list_data'],function (index,value){
-						var date = new Date(value['CREATED_ON'] * 1000);
-						table_data = table_data+'<tr><td class="idnum">'+(parseInt(index)+1)+'</td><td>'+value['FIRST_NAME']+' '+value['LAST_NAME']+'</td><td>'+value['EMAIL']+'</td><td>Merchant</td><td>'+date.getDate()+'-' + (date.getMonth()+1) + '-'+date.getFullYear()+'</td><td class="action"><div class="bbox"><a onClick="edit_account('+value['USER_ID']+')" data-toggle="modal" data-target="#editmerchant" title="Edit"><span class="glyphicon glyphicon-pencil"></span></a><a title="Delete"><span class="glyphicon glyphicon-trash"></span></a></div></td></tr>';
+						var date = new Date(value['CREATED_DATE'] * 1000);
+						if(value['STATUS'] == '1'){
+							var checked="checked";
+						}else{
+							var checked="";
+						}
+					table_data = table_data+'';
 								});
 				}else{
 					table_data = "<tr><td colspan='5'> No data Found</td></tr>"
 				}
-				$('#account tbody').empty().append(table_data);
+				$('#group tbody').empty().append(table_data);
 				if(parseInt(data['count_data'][0]['total']) % 2 == 0){
                     var total_pages =parseInt(data['count_data'][0]['total'])/2;
 				} else {
                     var total_pages = Math.floor(parseInt(data['count_data'][0]['total'])/2)+1; 
                 }
-				$('.next_account').attr('data-max',total_pages);
+				$('.next_group').attr('data-max',total_pages);
       		}
    		})
 }

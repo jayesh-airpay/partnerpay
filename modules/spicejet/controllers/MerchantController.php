@@ -3,9 +3,11 @@
 namespace app\modules\spicejet\controllers;
 
 use Yii;
+use yii\web\UploadedFile;
 use yii\base\Hcontroller;
+use app\helpers\Checksum;
 
-class MerchantController extends \yii\web\Controller
+class MerchantController extends HController
 {
     public function actionIndex()
     {
@@ -83,18 +85,20 @@ class MerchantController extends \yii\web\Controller
             $add_to_partner->bindValue(':created_on',strtotime(date()));
             $add_to_partner_status = $add_to_partner->execute();
             $partner_id = $connection->getLastInsertID();
+            $password_without = $this->generate_password();
+            $password = Yii::$app->security->generatePasswordHash($password_without);
             $query3="INSERT INTO tbl_user_master (MERCHANT_ID,PARTNER_ID,USER_TYPE,EMAIL,PASSWORD,FIRST_NAME,LAST_NAME,MOBILE,USER_STATUS,CREATED_ON) VALUES ('53',:partner_id,'partner',:email,:password,:fname,:lname,:mobile,'E',:created_on)";
             $add_to_user = $connection->createCommand($query3);
             $add_to_user->bindValue(':partner_id',$partner_id);
             $add_to_user->bindValue(':email',$agent_to_partner_data[0]['PROPRIETOR_EMAIL']);
-            $add_to_user->bindValue(':password',md5($this->generate_password()));
+            $add_to_user->bindValue(':password',$password);
             $add_to_user->bindValue(':fname',$name[0]);
             $add_to_user->bindValue(':lname',$name[1]);
             $add_to_user->bindValue(':mobile',$agent_to_partner_data[0]['PROPRIETOR_MOBILE']);
             $add_to_user->bindValue(':created_on',strtotime(date()));
             $add_to_user_status = $add_to_user->execute();
             if($add_to_user_status){
-                echo true;
+                echo $password_without.'true';
             }else{
                 echo false;
             }
@@ -209,6 +213,128 @@ class MerchantController extends \yii\web\Controller
         $add_to_limit->bindValue(':created_on',strtotime(date()));
         $add_to_limit_status = $add_to_limit->execute();
         if($add_to_limit_status){
+            echo true;
+        }else{
+            echo false;
+        }
+    }
+
+    public function actionGetcards(){
+        $connection = Yii::$app->db;
+        $page = Yii::$app->request->post('page');
+        $offset=($page-1)*2;
+        $card_list_data =array();
+        $query="SELECT ad.EMAIL,ad.AGENT_ID,pc.AGENT_PAYMENT_CONFIG_ID,pc.CARD_NUMBER FROM tbl_agent_payment_config as pc JOIN tbl_agent_details as ad on pc.AGENT_DETAILS_ID=ad.AGENT_DETAILS_ID WHERE ad.AGENT_ONBOARD_STATUS = '1' AND pc.STATUS='0' AND ad.AGENT_ID LIKE :agent_id AND ad.EMAIL LIKE :email AND pc.CARD_NUMBER LIKE :card_number LIMIT :offset, 2";
+        $card = $connection->createCommand($query);
+        $card->bindValue(':offset',$offset);
+        $card->bindValue(':agent_id','%'.Yii::$app->request->post('agent_id').'%');
+        $card->bindValue(':email','%'.Yii::$app->request->post('email').'%');
+        $card->bindValue(':card_number','%'.Yii::$app->request->post('payment_search').'%');
+        $card_data = $card->queryAll();
+        $card_list_data['list_data'] = $card_data;
+        $count_query = "SELECT COUNT(AGENT_PAYMENT_CONFIG_ID) as total FROM tbl_agent_payment_config as pc JOIN tbl_agent_details as ad on pc.AGENT_DETAILS_ID=ad.AGENT_DETAILS_ID WHERE ad.AGENT_ONBOARD_STATUS = '1' AND pc.STATUS='0' AND ad.AGENT_ID LIKE :agent_id AND ad.EMAIL LIKE :email AND pc.CARD_NUMBER LIKE :card_number";
+        $card_count = $connection->createCommand($count_query);
+        $card_count->bindValue(':agent_id','%'.Yii::$app->request->post('agent_id').'%');
+        $card_count->bindValue(':email','%'.Yii::$app->request->post('email').'%');
+        $card_count->bindValue(':card_number','%'.Yii::$app->request->post('payment_search').'%');
+        $card_count_data = $card_count->queryAll();
+        $card_list_data['count_data'] = $card_count_data;
+        echo json_encode($card_list_data);
+    }
+    
+    public function actionRejectcard(){
+        $connection = Yii::$app->db;
+        $query="UPDATE tbl_agent_payment_config SET STATUS='2' where AGENT_PAYMENT_CONFIG_ID=:agent_payment_config_id";
+        $agent = $connection->createCommand($query);
+        $agent->bindValue(':agent_payment_config_id',Yii::$app->request->post('AGENT_PAYMENT_CONFIG_ID'));
+        $agent_data = $agent->execute();
+        if($agent_data){
+            echo true;
+        } else {
+            echo false;
+        }
+    }
+
+    public function actionCheckagentingroup(){
+        $connection = Yii::$app->db;
+        $query="SELECT ad.EMAIL,ad.AGENT_ID,pc.AGENT_PAYMENT_CONFIG_ID,pc.GROUP_ID,pc.CARD_NUMBER FROM tbl_agent_payment_config as pc JOIN tbl_agent_details as ad on pc.AGENT_DETAILS_ID=ad.AGENT_DETAILS_ID WHERE pc.GROUP_ID != '0' AND pc.AGENT_PAYMENT_CONFIG_ID = :agent_payment_config_id";
+        $card_details = $connection->createCommand($query);
+        $card_details->bindValue(':agent_payment_config_id',Yii::$app->request->post('agent_payment_config_id'));
+        $card_details_data = $card_details->queryAll();
+        if(sizeof($card_details_data)>0){
+            $card_details_data[0]['status']=1;
+            echo json_encode($card_details_data[0]);
+        } else {
+            echo json_encode(['status'=>0]);
+        }
+    }
+
+    public function actionApprovecard(){
+        $connection = Yii::$app->db;
+        $query="UPDATE tbl_agent_group SET GROUP_MOBILE=:group_mobile where AGENT_GROUP_ID=:group_id";
+        $group_mobile = $connection->createCommand($query);
+        $group_mobile->bindValue(':group_id',Yii::$app->request->post('groupid'));
+        $group_mobile->bindValue(':group_mobile',Yii::$app->request->post('mobile_number'));
+        $group_mobile_data = $group_mobile->execute();
+        $query1="UPDATE tbl_agent_payment_config SET STATUS='1' where AGENT_PAYMENT_CONFIG_ID=:agent_payment_config_id";
+        $card_approve = $connection->createCommand($query1);
+        $card_approve->bindValue(':agent_payment_config_id',Yii::$app->request->post('id'));
+        $card_approve_data = $card_approve->execute();
+        if($card_approve_data){
+            echo true;
+        }else{
+            echo false;
+        }
+    }
+
+    public function actionGetaccounts(){
+        $connection = Yii::$app->db;
+        $page = Yii::$app->request->post('page');
+        $offset=($page-1)*2;
+        $account_list_data =array();
+        $query="SELECT USER_ID,FIRST_NAME,LAST_NAME,EMAIL,CREATED_ON FROM tbl_user_master WHERE MERCHANT_ID = '53' AND 	PARTNER_ID = '0' LIMIT :offset, 2";
+        $account = $connection->createCommand($query);
+        $account->bindValue(':offset',$offset);
+        $account_data = $account->queryAll();
+        $account_list_data['list_data'] = $account_data;
+        $count_query = "SELECT COUNT(USER_ID) as total FROM tbl_user_master WHERE MERCHANT_ID = '53' AND PARTNER_ID = '0'";
+        $account_count = $connection->createCommand($count_query);
+        $account_count_data = $account_count->queryAll();
+        $account_list_data['count_data'] = $account_count_data;
+        echo json_encode($account_list_data);
+    }
+
+    public function actionUpdateaccount(){
+        $connection = Yii::$app->db;
+        $query1="UPDATE tbl_user_master SET FIRST_NAME=:fname,LAST_NAME=:lname,MOBILE=:mob,EMAIL=:mail where USER_ID=:userid";
+        $account_update = $connection->createCommand($query1);
+        $account_update->bindValue(':fname',Yii::$app->request->post('firstname'));
+        $account_update->bindValue(':lname',Yii::$app->request->post('lastname'));
+        $account_update->bindValue(':mob',Yii::$app->request->post('mobile_number'));
+        $account_update->bindValue(':mail',Yii::$app->request->post('email'));
+        $account_update->bindValue(':userid',Yii::$app->request->post('id'));
+        $account_update_data = $account_update->execute();
+        if($account_update_data){
+            echo true;
+        }else{
+            echo false;
+        }
+    }
+
+    public function actionAddaccount(){
+        $connection = Yii::$app->db;
+        $password_without = $this->generate_password();
+        $password = Yii::$app->security->generatePasswordHash($password_without);
+        $query3="INSERT INTO tbl_user_master (MERCHANT_ID,USER_TYPE,EMAIL,PASSWORD,FIRST_NAME,LAST_NAME,MOBILE,USER_STATUS,CREATED_ON) VALUES ('53','merchant',:email,:password,:fname,:lname,:mobile,'E',:created_on)";
+        $add_to_user = $connection->createCommand($query3);
+        $add_to_user->bindValue(':email',Yii::$app->request->post('email'));
+        $add_to_user->bindValue(':password',$password);
+        $add_to_user->bindValue(':fname',Yii::$app->request->post('firstname'));
+        $add_to_user->bindValue(':lname',Yii::$app->request->post('lastname'));
+        $add_to_user->bindValue(':mobile',Yii::$app->request->post('mobile_number'));
+        $add_to_user->bindValue(':created_on',strtotime(date('d-m-Y')));
+        $add_to_user_status = $add_to_user->execute();
+        if($add_to_user_status){
             echo true;
         }else{
             echo false;

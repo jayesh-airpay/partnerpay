@@ -464,5 +464,7 @@ You can use the following account details to login and start paying your invoice
        
       
 //     }
-
+    function ccMasking($number, $maskingCharacter = 'x') {
+         return substr($number, 0, 4) . str_repeat($maskingCharacter, strlen($number) - 8) . substr($number, -4);
+    }
 } 

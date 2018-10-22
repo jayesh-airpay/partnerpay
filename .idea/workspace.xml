@@ -11,40 +11,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/spicejet/views/agency/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="684" column="16" lean-forward="false" selection-start-line="684" selection-start-column="16" selection-end-line="684" selection-end-column="16" />
+            <state relative-caret-position="491">
+              <caret line="607" column="27" lean-forward="false" selection-start-line="607" selection-start-column="27" selection-end-line="607" selection-end-column="27" />
               <folding>
-                <element signature="e#2196#2203#1#HTML" expanded="true" />
-                <element signature="e#2650#2657#1#HTML" expanded="true" />
-                <element signature="e#23425#26069#0#HTML" expanded="false" />
-                <element signature="e#26116#34288#0#HTML" expanded="false" />
-                <marker date="1540190997365" expanded="true" signature="7932:7987" ph="SELECT A.* F... tbl_bank" />
-                <marker date="1540190997365" expanded="true" signature="18571:18626" ph="SELECT A.* F... tbl_bank" />
+                <marker date="1540237492122" expanded="true" signature="8002:8057" ph="SELECT A.* F... tbl_bank" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AgencyController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AgencyController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/modules/spicejet/controllers/AgencyController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="72" column="61" lean-forward="false" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+            <state relative-caret-position="324">
+              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
               <folding>
-                <marker date="1540139816912" expanded="true" signature="1976:2063" ph="SELECT A.* F... tbl_invoice" />
-                <marker date="1540139816912" expanded="true" signature="2372:2609" ph="UPDATE tbl_order... " />
-                <marker date="1540139816912" expanded="true" signature="2372:2615" ph="UPDATE tbl_order... " />
-                <marker date="1540139816912" expanded="true" signature="2372:2616" ph="UPDATE tbl_order... " />
-                <marker date="1540139816912" expanded="true" signature="2372:2640" ph="UPDATE tbl_order... " />
-                <marker date="1540139816912" expanded="true" signature="3408:3480" ph="UPDATE tbl_invoice... " />
-                <marker date="1540139816912" expanded="true" signature="3895:4193" ph="SELECT A.*,B... tbl_agent_details" />
-                <marker date="1540139816912" expanded="true" signature="4479:4568" ph="SELECT A.* F... tbl_agent_payment_config" />
-                <marker date="1540139816912" expanded="true" signature="4786:4808" ph="SELECT A.* F... tbl_bank" />
-                <marker date="1540139816912" expanded="true" signature="4917:5029" ph="SELECT A.*,B... tbl_invoice" />
-                <marker date="1540139816912" expanded="true" signature="4917:5095" ph="SELECT A.*,B... tbl_invoice" />
+                <marker date="1540236316735" expanded="true" signature="1756:1843" ph="SELECT A.* F... tbl_invoice" />
+                <marker date="1540236316735" expanded="true" signature="2126:2394" ph="UPDATE tbl_order... " />
+                <marker date="1540236316735" expanded="true" signature="3143:3215" ph="UPDATE tbl_invoice... " />
+                <marker date="1540236316735" expanded="true" signature="3588:3727" ph="SELECT A.*,B... tbl_agent_details" />
+                <marker date="1540236316735" expanded="true" signature="3980:4069" ph="SELECT A.* F... tbl_agent_payment_config" />
+                <marker date="1540236316735" expanded="true" signature="4248:4270" ph="SELECT * FRO... tbl_bank" />
+                <marker date="1540236316735" expanded="true" signature="4367:4445" ph="SELECT A.* F... tbl_agent_group_payment_limit" />
+                <marker date="1540236316735" expanded="true" signature="4617:4795" ph="SELECT A.*,B... tbl_invoice" />
+                <marker date="1540236316735" expanded="true" signature="6063:6144" ph="SELECT A.* F... tbl_agent_payment_config" />
+                <marker date="1540236316735" expanded="true" signature="6683:6957" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="7101:7156" ph="SELECT A.* F... tbl_bank" />
+                <marker date="1540236316735" expanded="true" signature="7331:7605" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="8038:8119" ph="SELECT A.* F... tbl_agent_payment_config" />
+                <marker date="1540236316735" expanded="true" signature="8490:8733" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="8490:8811" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="8490:10004" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="8535:8688" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="8733:8734" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="8733:8766" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="8811:9335" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="8811:9417" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="9485:9954" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="9556:9900" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="10148:10203" ph="SELECT A.* F... tbl_bank" />
+                <marker date="1540236316735" expanded="true" signature="10378:11154" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="10611:11100" ph="..." />
+                <marker date="1540236316735" expanded="true" signature="10686:11042" ph="..." />
               </folding>
             </state>
           </provider>
@@ -53,20 +64,22 @@
       <file leaf-file-name="ActionController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/spicejet/controllers/ActionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1782">
-              <caret line="101" column="37" lean-forward="false" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+            <state relative-caret-position="2">
+              <caret line="50" column="28" lean-forward="false" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
               <folding>
-                <marker date="1540140768943" expanded="true" signature="809:1107" ph="SELECT A.*,B... tbl_agent_details" />
-                <marker date="1540140768943" expanded="true" signature="1417:1563" ph="SELECT A.* F... tbl_agent_payment_config" />
-                <marker date="1540140768943" expanded="true" signature="3897:4195" ph="SELECT A.*,B... tbl_agent_details" />
-                <marker date="1540140768943" expanded="true" signature="4506:4652" ph="SELECT A.* F... tbl_agent_payment_config" />
-                <marker date="1540140768943" expanded="true" signature="5006:5269" ph="INSERT INTO tbl_invoice... " />
-                <marker date="1540140768943" expanded="true" signature="6234:6531" ph="INSERT INTO tbl_order... " />
-                <marker date="1540140768943" expanded="true" signature="11902:12200" ph="SELECT A.*,B... tbl_agent_details" />
-                <marker date="1540140768943" expanded="true" signature="16135:16482" ph="INSERT INTO tbl_agent_payment_config... " />
-                <marker date="1540140768943" expanded="true" signature="19090:19388" ph="SELECT A.*,B... tbl_agent_details" />
-                <marker date="1540140768943" expanded="true" signature="20238:20585" ph="INSERT INTO tbl_agent_payment_config... " />
-                <marker date="1540140768943" expanded="true" signature="22866:23044" ph="SELECT A.*,B... tbl_invoice" />
+                <marker date="1540237709070" expanded="true" signature="708:847" ph="SELECT A.*,B... tbl_agent_details" />
+                <marker date="1540237709070" expanded="true" signature="1099:1245" ph="SELECT A.* F... tbl_agent_payment_config" />
+                <marker date="1540237709070" expanded="true" signature="1515:1593" ph="SELECT A.* F... tbl_agent_group_payment_limit" />
+                <marker date="1540237709070" expanded="true" signature="5221:5360" ph="SELECT A.*,B... tbl_agent_details" />
+                <marker date="1540237709070" expanded="true" signature="5612:5758" ph="SELECT A.* F... tbl_agent_payment_config" />
+                <marker date="1540237709070" expanded="true" signature="6054:6338" ph="INSERT INTO tbl_invoice... " />
+                <marker date="1540237709070" expanded="true" signature="7323:7620" ph="INSERT INTO tbl_order... " />
+                <marker date="1540237709070" expanded="true" signature="10641:10696" ph="SELECT A.* F... tbl_bank" />
+                <marker date="1540237709070" expanded="true" signature="12383:12522" ph="SELECT A.*,B... tbl_agent_details" />
+                <marker date="1540237709070" expanded="true" signature="15810:16146" ph="INSERT INTO tbl_agent_payment_config... " />
+                <marker date="1540237709070" expanded="true" signature="18675:18814" ph="SELECT A.*,B... tbl_agent_details" />
+                <marker date="1540237709070" expanded="true" signature="19664:20000" ph="INSERT INTO tbl_agent_payment_config... " />
+                <marker date="1540237709070" expanded="true" signature="22111:22289" ph="SELECT A.*,B... tbl_invoice" />
               </folding>
             </state>
           </provider>
@@ -76,28 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Email</find>
-      <find>card_nickname</find>
-      <find>alert</find>
-      <find>form-add</find>
-      <find>&lt;/form&gt;</find>
-      <find>newpay</find>
-      <find>&lt;form</find>
-      <find>addcardbtn</find>
-      <find>Payment Instrument</find>
-      <find>Select Bank</find>
-      <find>payment_card_type</find>
-      <find>select-</find>
-      <find>$partner_id</find>
-      <find>bank</find>
-      <find>View Transaction</find>
-      <find>transactions</find>
-      <find>Yii</find>
-      <find>transactio</find>
-      <find>Minimum upload Amount for credit card</find>
-      <find>Payment Method</find>
-      <find>listing</find>
-      <find>merchantlist</find>
       <find>AGNET</find>
       <find>&lt;scr</find>
       <find>has-error</find>
@@ -106,6 +97,28 @@
       <find>$add_banks_url</find>
       <find>cards</find>
       <find>payment_method_error</find>
+      <find>Payment Method</find>
+      <find>payment_card_type_error</find>
+      <find>form</find>
+      <find>&lt;form</find>
+      <find>sendto</find>
+      <find>is_payment_done</find>
+      <find>nick</find>
+      <find>$connection</find>
+      <find>Actio</find>
+      <find>banks</find>
+      <find>$agent_registration_data</find>
+      <find>get_group</find>
+      <find>agency_name</find>
+      <find>card_nickname</find>
+      <find>A.*,B.*,C.*,D.*</find>
+      <find>A.*,B.*,C.*,D</find>
+      <find>Pay Using</find>
+      <find>Pay using</find>
+      <find>if (isset($card['STATUS']) &amp;&amp; $card['STATUS'] != '') {</find>
+      <find>Minimum upload Amount for credit card</find>
+      <find>addbank</find>
+      <find>$group_info</find>
     </findStrings>
     <replaceStrings>
       <replace>$post_data</replace>
@@ -129,12 +142,13 @@
         <option value="$PROJECT_DIR$/helpers/generalHelper.php" />
         <option value="$PROJECT_DIR$/modules/spicejet/views/payment/sendtoairpay.php" />
         <option value="$PROJECT_DIR$/modules/spicejet/controllers/PaymentController.php" />
-        <option value="$PROJECT_DIR$/modules/spicejet/controllers/ActionController.php" />
         <option value="$PROJECT_DIR$/web/spicejet/resources/css/custom.css" />
-        <option value="$PROJECT_DIR$/modules/spicejet/controllers/AgencyController.php" />
+        <option value="$PROJECT_DIR$/modules/spicejet/views/merchant/agent_registration_report.php" />
         <option value="$PROJECT_DIR$/modules/spicejet/controllers/MerchantController.php" />
         <option value="$PROJECT_DIR$/modules/spicejet/views/merchant/index.php" />
+        <option value="$PROJECT_DIR$/modules/spicejet/controllers/AgencyController.php" />
         <option value="$PROJECT_DIR$/modules/spicejet/views/agency/index.php" />
+        <option value="$PROJECT_DIR$/modules/spicejet/controllers/ActionController.php" />
       </list>
     </option>
   </component>
@@ -190,22 +204,7 @@
               <item name="partnerpay" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="spicejet" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="partnerpay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="partnerpay" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="spicejet" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="partnerpay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="partnerpay" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="spicejet" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="agency" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="partnerpay" type="b2602c69:ProjectViewProjectNode" />
@@ -218,36 +217,7 @@
             <path>
               <item name="partnerpay" type="b2602c69:ProjectViewProjectNode" />
               <item name="partnerpay" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="spicejet" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="payment" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="partnerpay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="partnerpay" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="partnerpay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="partnerpay" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="spicejet" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="partnerpay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="partnerpay" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="spicejet" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="partnerpay" type="b2602c69:ProjectViewProjectNode" />
-              <item name="partnerpay" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="spicejet" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -263,13 +233,14 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="TEXT" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/modules/spicejet/views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/spicejet/resources/css" />
       <recent name="$PROJECT_DIR$/modules/spicejet/views/merchant" />
       <recent name="$PROJECT_DIR$/modules/spicejet/controllers" />
       <recent name="$PROJECT_DIR$/web/spicejet/resources/fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules/spicejet/views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -304,25 +275,26 @@
       <workItem from="1539835873081" duration="28561000" />
       <workItem from="1540135477774" duration="5282000" />
       <workItem from="1540183368313" duration="5862000" />
-      <workItem from="1540190268131" duration="718000" />
+      <workItem from="1540190268131" duration="21736000" />
+      <workItem from="1540232640844" duration="5555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93850000" />
+    <option name="totallyTimeSpent" value="120423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2490024" sideWeight="0.46905538" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2529928" sideWeight="0.46254072" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2490024" sideWeight="0.53094465" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2529928" sideWeight="0.53745925" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -348,92 +320,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/spicejet/views/agency/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7740">
-          <caret line="430" column="20" lean-forward="false" selection-start-line="430" selection-start-column="16" selection-end-line="430" selection-end-column="20" />
-          <folding>
-            <element signature="e#2196#2203#1#HTML" expanded="true" />
-            <element signature="e#2650#2657#1#HTML" expanded="true" />
-            <element signature="e#23425#26069#0#HTML" expanded="false" />
-            <element signature="e#26116#34288#0#HTML" expanded="false" />
-            <marker date="1540190997365" expanded="true" signature="7932:7987" ph="SELECT A.* F... tbl_bank" />
-            <marker date="1540190997365" expanded="true" signature="18571:18626" ph="SELECT A.* F... tbl_bank" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/spicejet/controllers/AgencyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="22" />
-          <folding>
-            <marker date="1540139816912" expanded="true" signature="1976:2063" ph="SELECT A.* F... tbl_invoice" />
-            <marker date="1540139816912" expanded="true" signature="2372:2609" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="2372:2615" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="2372:2616" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="2372:2640" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="3408:3480" ph="UPDATE tbl_invoice... " />
-            <marker date="1540139816912" expanded="true" signature="3895:4193" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540139816912" expanded="true" signature="4479:4568" ph="SELECT A.* F... tbl_agent_payment_config" />
-            <marker date="1540139816912" expanded="true" signature="4786:4808" ph="SELECT A.* F... tbl_bank" />
-            <marker date="1540139816912" expanded="true" signature="4917:5029" ph="SELECT A.*,B... tbl_invoice" />
-            <marker date="1540139816912" expanded="true" signature="4917:5095" ph="SELECT A.*,B... tbl_invoice" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/spicejet/controllers/ActionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4914">
-          <caret line="273" column="19" lean-forward="true" selection-start-line="273" selection-start-column="19" selection-end-line="273" selection-end-column="19" />
-          <folding>
-            <marker date="1540140768943" expanded="true" signature="809:1107" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="1417:1563" ph="SELECT A.* F... tbl_agent_payment_config" />
-            <marker date="1540140768943" expanded="true" signature="3897:4195" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="4506:4652" ph="SELECT A.* F... tbl_agent_payment_config" />
-            <marker date="1540140768943" expanded="true" signature="5006:5269" ph="INSERT INTO tbl_invoice... " />
-            <marker date="1540140768943" expanded="true" signature="6234:6531" ph="INSERT INTO tbl_order... " />
-            <marker date="1540140768943" expanded="true" signature="11902:12200" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="16135:16482" ph="INSERT INTO tbl_agent_payment_config... " />
-            <marker date="1540140768943" expanded="true" signature="19090:19388" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="20238:20585" ph="INSERT INTO tbl_agent_payment_config... " />
-            <marker date="1540140768943" expanded="true" signature="22866:23044" ph="SELECT A.*,B... tbl_invoice" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/spicejet/views/agency/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="54" column="67" lean-forward="false" selection-start-line="54" selection-start-column="67" selection-end-line="54" selection-end-column="67" />
-          <folding>
-            <element signature="e#2196#2203#1#HTML" expanded="true" />
-            <element signature="e#2650#2657#1#HTML" expanded="true" />
-            <element signature="e#23425#26069#0#HTML" expanded="false" />
-            <element signature="e#26116#34288#0#HTML" expanded="false" />
-            <marker date="1540190997365" expanded="true" signature="7932:7987" ph="SELECT A.* F... tbl_bank" />
-            <marker date="1540190997365" expanded="true" signature="18571:18626" ph="SELECT A.* F... tbl_bank" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/spicejet/controllers/ActionController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1854">
           <caret line="103" column="8" lean-forward="false" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="69" />
           <folding>
-            <marker date="1540140768943" expanded="true" signature="809:1107" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="1417:1563" ph="SELECT A.* F... tbl_agent_payment_config" />
-            <marker date="1540140768943" expanded="true" signature="3897:4195" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="4506:4652" ph="SELECT A.* F... tbl_agent_payment_config" />
-            <marker date="1540140768943" expanded="true" signature="5006:5269" ph="INSERT INTO tbl_invoice... " />
-            <marker date="1540140768943" expanded="true" signature="6234:6531" ph="INSERT INTO tbl_order... " />
-            <marker date="1540140768943" expanded="true" signature="11902:12200" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="16135:16482" ph="INSERT INTO tbl_agent_payment_config... " />
-            <marker date="1540140768943" expanded="true" signature="19090:19388" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="20238:20585" ph="INSERT INTO tbl_agent_payment_config... " />
-            <marker date="1540140768943" expanded="true" signature="22866:23044" ph="SELECT A.*,B... tbl_invoice" />
+            <marker date="1540237709070" expanded="true" signature="708:847" ph="SELECT A.*,B... tbl_agent_details" />
+            <marker date="1540237709070" expanded="true" signature="1099:1245" ph="SELECT A.* F... tbl_agent_payment_config" />
+            <marker date="1540237709070" expanded="true" signature="1515:1593" ph="SELECT A.* F... tbl_agent_group_payment_limit" />
+            <marker date="1540237709070" expanded="true" signature="5221:5360" ph="SELECT A.*,B... tbl_agent_details" />
+            <marker date="1540237709070" expanded="true" signature="5612:5758" ph="SELECT A.* F... tbl_agent_payment_config" />
+            <marker date="1540237709070" expanded="true" signature="6054:6338" ph="INSERT INTO tbl_invoice... " />
+            <marker date="1540237709070" expanded="true" signature="7323:7620" ph="INSERT INTO tbl_order... " />
+            <marker date="1540237709070" expanded="true" signature="10641:10696" ph="SELECT A.* F... tbl_bank" />
+            <marker date="1540237709070" expanded="true" signature="12383:12522" ph="SELECT A.*,B... tbl_agent_details" />
+            <marker date="1540237709070" expanded="true" signature="15810:16146" ph="INSERT INTO tbl_agent_payment_config... " />
+            <marker date="1540237709070" expanded="true" signature="18675:18814" ph="SELECT A.*,B... tbl_agent_details" />
+            <marker date="1540237709070" expanded="true" signature="19664:20000" ph="INSERT INTO tbl_agent_payment_config... " />
+            <marker date="1540237709070" expanded="true" signature="22111:22289" ph="SELECT A.*,B... tbl_invoice" />
           </folding>
         </state>
       </provider>
@@ -449,6 +353,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -457,17 +362,33 @@
         <state relative-caret-position="1116">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
-            <marker date="1540139816912" expanded="true" signature="1976:2063" ph="SELECT A.* F... tbl_invoice" />
-            <marker date="1540139816912" expanded="true" signature="2372:2609" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="2372:2615" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="2372:2616" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="2372:2640" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="3408:3480" ph="UPDATE tbl_invoice... " />
-            <marker date="1540139816912" expanded="true" signature="3895:4193" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540139816912" expanded="true" signature="4479:4568" ph="SELECT A.* F... tbl_agent_payment_config" />
-            <marker date="1540139816912" expanded="true" signature="4786:4808" ph="SELECT A.* F... tbl_bank" />
-            <marker date="1540139816912" expanded="true" signature="4917:5029" ph="SELECT A.*,B... tbl_invoice" />
-            <marker date="1540139816912" expanded="true" signature="4917:5095" ph="SELECT A.*,B... tbl_invoice" />
+            <marker date="1540236316735" expanded="true" signature="1756:1843" ph="SELECT A.* F... tbl_invoice" />
+            <marker date="1540236316735" expanded="true" signature="2126:2394" ph="UPDATE tbl_order... " />
+            <marker date="1540236316735" expanded="true" signature="3143:3215" ph="UPDATE tbl_invoice... " />
+            <marker date="1540236316735" expanded="true" signature="3588:3727" ph="SELECT A.*,B... tbl_agent_details" />
+            <marker date="1540236316735" expanded="true" signature="3980:4069" ph="SELECT A.* F... tbl_agent_payment_config" />
+            <marker date="1540236316735" expanded="true" signature="4248:4270" ph="SELECT * FRO... tbl_bank" />
+            <marker date="1540236316735" expanded="true" signature="4367:4445" ph="SELECT A.* F... tbl_agent_group_payment_limit" />
+            <marker date="1540236316735" expanded="true" signature="4617:4795" ph="SELECT A.*,B... tbl_invoice" />
+            <marker date="1540236316735" expanded="true" signature="6063:6144" ph="SELECT A.* F... tbl_agent_payment_config" />
+            <marker date="1540236316735" expanded="true" signature="6683:6957" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="7101:7156" ph="SELECT A.* F... tbl_bank" />
+            <marker date="1540236316735" expanded="true" signature="7331:7605" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8038:8119" ph="SELECT A.* F... tbl_agent_payment_config" />
+            <marker date="1540236316735" expanded="true" signature="8490:8733" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8490:8811" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8490:10004" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8535:8688" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8733:8734" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8733:8766" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8811:9335" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8811:9417" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="9485:9954" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="9556:9900" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="10148:10203" ph="SELECT A.* F... tbl_bank" />
+            <marker date="1540236316735" expanded="true" signature="10378:11154" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="10611:11100" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="10686:11042" ph="..." />
           </folding>
         </state>
       </provider>
@@ -701,6 +622,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -708,13 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="203" column="8" lean-forward="false" selection-start-line="203" selection-start-column="8" selection-end-line="203" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -729,20 +644,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/spicejet/views/merchant/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="922" column="63" lean-forward="false" selection-start-line="922" selection-start-column="63" selection-end-line="922" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/spicejet/controllers/MerchantController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="7" column="52" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -753,57 +655,123 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/spicejet/resources/css/jquery-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21558">
+          <caret line="4" column="74" lean-forward="true" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="134" column="24" lean-forward="false" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/payment/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="47" column="17" lean-forward="false" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/spicejet/views/merchant/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1268" column="38" lean-forward="false" selection-start-line="1268" selection-start-column="38" selection-end-line="1268" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/spicejet/views/merchant/agent_registration_report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2628">
+          <caret line="146" column="8" lean-forward="false" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/spicejet/controllers/MerchantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="257" column="45" lean-forward="false" selection-start-line="257" selection-start-column="45" selection-end-line="257" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/db/Command.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="370" column="20" lean-forward="false" selection-start-line="370" selection-start-column="20" selection-end-line="370" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/spicejet/views/agency/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="607" column="27" lean-forward="false" selection-start-line="607" selection-start-column="27" selection-end-line="607" selection-end-column="27" />
+          <folding>
+            <marker date="1540237492122" expanded="true" signature="8002:8057" ph="SELECT A.* F... tbl_bank" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/spicejet/controllers/ActionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="101" column="37" lean-forward="false" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+        <state relative-caret-position="2">
+          <caret line="50" column="28" lean-forward="false" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
           <folding>
-            <marker date="1540140768943" expanded="true" signature="809:1107" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="1417:1563" ph="SELECT A.* F... tbl_agent_payment_config" />
-            <marker date="1540140768943" expanded="true" signature="3897:4195" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="4506:4652" ph="SELECT A.* F... tbl_agent_payment_config" />
-            <marker date="1540140768943" expanded="true" signature="5006:5269" ph="INSERT INTO tbl_invoice... " />
-            <marker date="1540140768943" expanded="true" signature="6234:6531" ph="INSERT INTO tbl_order... " />
-            <marker date="1540140768943" expanded="true" signature="11902:12200" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="16135:16482" ph="INSERT INTO tbl_agent_payment_config... " />
-            <marker date="1540140768943" expanded="true" signature="19090:19388" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540140768943" expanded="true" signature="20238:20585" ph="INSERT INTO tbl_agent_payment_config... " />
-            <marker date="1540140768943" expanded="true" signature="22866:23044" ph="SELECT A.*,B... tbl_invoice" />
+            <marker date="1540237709070" expanded="true" signature="708:847" ph="SELECT A.*,B... tbl_agent_details" />
+            <marker date="1540237709070" expanded="true" signature="1099:1245" ph="SELECT A.* F... tbl_agent_payment_config" />
+            <marker date="1540237709070" expanded="true" signature="1515:1593" ph="SELECT A.* F... tbl_agent_group_payment_limit" />
+            <marker date="1540237709070" expanded="true" signature="5221:5360" ph="SELECT A.*,B... tbl_agent_details" />
+            <marker date="1540237709070" expanded="true" signature="5612:5758" ph="SELECT A.* F... tbl_agent_payment_config" />
+            <marker date="1540237709070" expanded="true" signature="6054:6338" ph="INSERT INTO tbl_invoice... " />
+            <marker date="1540237709070" expanded="true" signature="7323:7620" ph="INSERT INTO tbl_order... " />
+            <marker date="1540237709070" expanded="true" signature="10641:10696" ph="SELECT A.* F... tbl_bank" />
+            <marker date="1540237709070" expanded="true" signature="12383:12522" ph="SELECT A.*,B... tbl_agent_details" />
+            <marker date="1540237709070" expanded="true" signature="15810:16146" ph="INSERT INTO tbl_agent_payment_config... " />
+            <marker date="1540237709070" expanded="true" signature="18675:18814" ph="SELECT A.*,B... tbl_agent_details" />
+            <marker date="1540237709070" expanded="true" signature="19664:20000" ph="INSERT INTO tbl_agent_payment_config... " />
+            <marker date="1540237709070" expanded="true" signature="22111:22289" ph="SELECT A.*,B... tbl_invoice" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/spicejet/controllers/AgencyController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="72" column="61" lean-forward="false" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+        <state relative-caret-position="324">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding>
-            <marker date="1540139816912" expanded="true" signature="1976:2063" ph="SELECT A.* F... tbl_invoice" />
-            <marker date="1540139816912" expanded="true" signature="2372:2609" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="2372:2615" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="2372:2616" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="2372:2640" ph="UPDATE tbl_order... " />
-            <marker date="1540139816912" expanded="true" signature="3408:3480" ph="UPDATE tbl_invoice... " />
-            <marker date="1540139816912" expanded="true" signature="3895:4193" ph="SELECT A.*,B... tbl_agent_details" />
-            <marker date="1540139816912" expanded="true" signature="4479:4568" ph="SELECT A.* F... tbl_agent_payment_config" />
-            <marker date="1540139816912" expanded="true" signature="4786:4808" ph="SELECT A.* F... tbl_bank" />
-            <marker date="1540139816912" expanded="true" signature="4917:5029" ph="SELECT A.*,B... tbl_invoice" />
-            <marker date="1540139816912" expanded="true" signature="4917:5095" ph="SELECT A.*,B... tbl_invoice" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/spicejet/views/agency/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="684" column="16" lean-forward="false" selection-start-line="684" selection-start-column="16" selection-end-line="684" selection-end-column="16" />
-          <folding>
-            <element signature="e#2196#2203#1#HTML" expanded="true" />
-            <element signature="e#2650#2657#1#HTML" expanded="true" />
-            <element signature="e#23425#26069#0#HTML" expanded="false" />
-            <element signature="e#26116#34288#0#HTML" expanded="false" />
-            <marker date="1540190997365" expanded="true" signature="7932:7987" ph="SELECT A.* F... tbl_bank" />
-            <marker date="1540190997365" expanded="true" signature="18571:18626" ph="SELECT A.* F... tbl_bank" />
+            <marker date="1540236316735" expanded="true" signature="1756:1843" ph="SELECT A.* F... tbl_invoice" />
+            <marker date="1540236316735" expanded="true" signature="2126:2394" ph="UPDATE tbl_order... " />
+            <marker date="1540236316735" expanded="true" signature="3143:3215" ph="UPDATE tbl_invoice... " />
+            <marker date="1540236316735" expanded="true" signature="3588:3727" ph="SELECT A.*,B... tbl_agent_details" />
+            <marker date="1540236316735" expanded="true" signature="3980:4069" ph="SELECT A.* F... tbl_agent_payment_config" />
+            <marker date="1540236316735" expanded="true" signature="4248:4270" ph="SELECT * FRO... tbl_bank" />
+            <marker date="1540236316735" expanded="true" signature="4367:4445" ph="SELECT A.* F... tbl_agent_group_payment_limit" />
+            <marker date="1540236316735" expanded="true" signature="4617:4795" ph="SELECT A.*,B... tbl_invoice" />
+            <marker date="1540236316735" expanded="true" signature="6063:6144" ph="SELECT A.* F... tbl_agent_payment_config" />
+            <marker date="1540236316735" expanded="true" signature="6683:6957" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="7101:7156" ph="SELECT A.* F... tbl_bank" />
+            <marker date="1540236316735" expanded="true" signature="7331:7605" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8038:8119" ph="SELECT A.* F... tbl_agent_payment_config" />
+            <marker date="1540236316735" expanded="true" signature="8490:8733" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8490:8811" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8490:10004" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8535:8688" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8733:8734" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8733:8766" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8811:9335" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="8811:9417" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="9485:9954" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="9556:9900" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="10148:10203" ph="SELECT A.* F... tbl_bank" />
+            <marker date="1540236316735" expanded="true" signature="10378:11154" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="10611:11100" ph="..." />
+            <marker date="1540236316735" expanded="true" signature="10686:11042" ph="..." />
           </folding>
         </state>
       </provider>
